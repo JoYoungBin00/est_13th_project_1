@@ -1,7 +1,3 @@
-@import url("normalize.css");
-@import url("reset.css");
-@import url("flex-utility.css");
-
 /* 변수 */
 :root{
 /* Color styles */
@@ -42,43 +38,64 @@
 
 }
 
-h1{
-  font-family: Pretentard;
-  font-weight: bold;
-  font-size: var(--text-title-xl);
-}
-
-h2{
-  font-family: Pretentard;
-  font-weight: bold;
-  font-size: var(--text-h2-lg);
-}
-
-h3{
-  font-family: Pretentard;
-  font-weight: bold;
-  font-size: var(--text-h3-lg);
-}
-
-p, link{
-  font-family: Pretentard;
-  font-size: var(--text-p);
-}
-
-.icon{
-  font-family: Material Icons;
-}
-
-
-
-
-
-
-
-
 /* 레이아웃 */
+.container{
+  max-width:1272px;
+  margin:0 auto;
+}
+.hidden{
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip-path:inset(50%);
+}
+section{
+  padding:80px 0;
+}
+.bg-surface{
+  background-color:#f9f9f9;
+}
 /* 타이포그래피 */
+.primary-color{
+  color:var(--e-s-t_blue);
+}
+h2{
+  font-size:var(--text-h2-lg);
+  color:var(--medium--black);
+  font-weight:700;
+}
+h3{
+  font-size:var(--text-h3-md);
+  font-weight:700;
+  line-height:28.6px;
+}
+p{
+  font-size:var(--text-p);
+  line-height:27px;
+  color:var(--medium--gray);
+}
 /* 링크 버튼 */
+.btn-primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--e-s-t_blue);
+  color:var(--white);
+  border-radius:5px;
+  font-size:var(--text-link);
+  transition:0.3s;
+}
+.btn-primary:hover{
+  background-color:var(--medium--biue);
+  color:var(--e-s-t_blue);
+}
+.btn-md{
+  width:108px;
+  height:36px;
+  font-size:14px;
+  vertical-align:baseline;
+}
 
 /* 헤더 -  */
 /* 푸터 -  */

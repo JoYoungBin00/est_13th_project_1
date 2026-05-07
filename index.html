@@ -11,96 +11,6 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/content.css">
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
-
-    body{
-      font-family:Arial, sans-serif;
-      background:#f5f5f5;
-    }
-
-    /* blue block */
-
-    .banner{
-      width:100%;
-      height:320px;
-      background:linear-gradient(135deg,#081a52,#1f4ed8,#6d28d9);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      color:white;
-    }
-
-    .banner-content{
-      text-align:center;
-    }
-
-    .banner-content h1{
-      font-size:48px;
-      margin-bottom:20px;
-    }
-
-    .banner-content p{
-      font-size:22px;
-      margin-bottom:25px;
-    }
-
-    .banner-content button{
-      padding:12px 30px;
-      border:none;
-      border-radius:30px;
-      background:white;
-      color:#1f4ed8;
-      font-weight:bold;
-      cursor:pointer;
-    }
-
-    /* 밑블럭 */
-
-    .content{
-      width:1100px;
-      margin:50px auto;
-      background:white;
-      padding:50px;
-      border-radius:20px;
-      box-shadow:0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    .content h2{
-      font-size:36px;
-      margin-bottom:20px;
-      color:#111;
-    }
-
-    .content p{
-      color:#666;
-      line-height:1.7;
-      margin-bottom:30px;
-    }
-
-    .cards{
-      display:flex;
-      gap:25px;
-    }
-
-    .card{
-      flex:1;
-      background:#f0f4ff;
-      padding:30px;
-      border-radius:15px;
-    }
-
-    .card h3{
-      margin-bottom:15px;
-      color:#1f4ed8;
-    }
-
-  </style>
 
 </head>
 <body>
@@ -251,57 +161,61 @@
   <!-- //강채희 -->  
   <!-- 커리큘럼 로드맵 -->
   <!-- 강채희 -->  
-  <header class="curriculum-header">
-    <span class="curriculum-label">CURRICULUM</span>
-    <h2 class="curriculum-title">커리큘럼 로드맵</h2>
-  </header>
-  <div class="curriculum-roadmap">
-    <div class="roadmap-line"></div>
-    <div class="roadmap-items">
-      <article class="roadmap-item">
-        <!-- 각 아이템 위에 놓일 동그라미 -->
-        <div class="roadmap-dot"></div>
-        <h3 class="roadmap-item-title">
-          <span class="curriculum-item-week">1-4주차</span>
-          UI 레이아웃
-        </h3>
-        <p class="curriculum-item-desc">HTML/CSS, Figma AI 활용 UI 설계</p>
-      </article>
-      <article class="roadmap-item">
-        <div class="roadmap-dot"></div>
-        <h3 class="roadmap-item-title">
-          <span class="curriculum-item-week">5-9주차</span>
-          JS & 프로그래밍
-        </h3>
-        <p class="curriculum-item-desc">JavaScript, 알고리즘</p>
-      </article>
-      <article class="roadmap-item">
-        <div class="roadmap-dot"></div>
-        <h3 class="roadmap-item-title">
-          <span class="curriculum-item-week">10-13주차</span>
-          React 앱 개발
-        </h3>
-        <p class="curriculum-item-desc">리액트, TypeScript</p>
-      </article>
-      <article class="roadmap-item">
-        <div class="roadmap-dot"></div>
-        <h3 class="roadmap-item-title">
-          <span class="curriculum-item-week">14-17주차</span>
-          백엔드 기초
-        </h3>
-        <p class="curriculum-item-desc">성능 최적화, Firebase/Supabase</p>
-      </article>
-      <article class="roadmap-item">
-        <div class="roadmap-dot"></div>
-        <h3 class="roadmap-item-title">
-          <span class="curriculum-item-week">18주차</span>
-          최종 프로젝트
-        </h3>
-        <p class="curriculum-item-desc">최종 서비스 런칭 및 현직자 취업 특강</p>
-      </article>
+  <section id="curriculum">
+    <div class="container">
+      <div class="curriculum-header">
+        <span class="curriculum-label primary-color">CURRICULUM</span>
+        <h2 class="curriculum-title">커리큘럼 로드맵</h2>
+      </div>
+      <div class="curriculum-roadmap">
+        <div class="roadmap-line"></div>
+        <div class="roadmap-items">
+          <article class="roadmap-item">
+            <!-- 각 아이템 위에 놓일 동그라미 -->
+            <span class="roadmap-dot"></span>
+            <h3 class="roadmap-item-title">
+              <span class="curriculum-item-week">1-4주차</span>
+              UI 레이아웃
+            </h3>
+            <p class="curriculum-item-desc">HTML/CSS, Figma AI 활용 UI 설계</p>
+          </article>
+          <article class="roadmap-item">
+            <span class="roadmap-dot"></span>
+            <h3 class="roadmap-item-title">
+              <span class="curriculum-item-week">5-9주차</span>
+              JS & 프로그래밍
+            </h3>
+            <p class="curriculum-item-desc">JavaScript, 알고리즘</p>
+          </article>
+          <article class="roadmap-item">
+            <span class="roadmap-dot"></span>
+            <h3 class="roadmap-item-title">
+              <span class="curriculum-item-week">10-13주차</span>
+              React 앱 개발
+            </h3>
+            <p class="curriculum-item-desc">리액트, TypeScript</p>
+          </article>
+          <article class="roadmap-item">
+            <span class="roadmap-dot"></span>
+            <h3 class="roadmap-item-title">
+              <span class="curriculum-item-week">14-17주차</span>
+              백엔드 기초
+            </h3>
+            <p class="curriculum-item-desc">성능 최적화, Firebase/Supabase</p>
+          </article>
+          <article class="roadmap-item">
+            <span class="roadmap-dot"></span>
+            <h3 class="roadmap-item-title">
+              <span class="curriculum-item-week">18주차</span>
+              최종 프로젝트
+            </h3>
+            <p class="curriculum-item-desc">최종 서비스 런칭 및 현직자 취업 특강</p>
+          </article>
+        </div>
+      </div>
+      <a href="#" class="btn btn-secondary">커리큘럼 더보기</a>
     </div>
-  </div>
-  <a href="#" class="btn btn-secondary">커리큘럼 더보기</a>
+  </section>
 <!-- //강채희 -->  
      
 <!-- 박소호 -->
