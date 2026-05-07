@@ -12,7 +12,7 @@
 --medium--gray: rgba(107, 118, 132, 1);
 --light--gray: rgba(217, 217, 217, 1);
 --light--blue: rgba(240, 247, 255, 1);
---medium--biue: rgba(229, 241, 255, 1);
+--medium--blue: rgba(229, 241, 255, 1);
 --liner: rgba(162, 162, 162, 1);
 --slides-gray: rgba(238, 238, 238, 1);
 --medium-gray2: rgba(104, 104, 104, 1);
@@ -126,6 +126,35 @@ body{
   box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
+.content h2{
+  font-size:36px;
+  margin-bottom:20px;
+  color:#111;
+}
+
+.content p{
+  color:#666;
+  line-height:1.7;
+  margin-bottom:30px;
+}
+
+.cards{
+  display:flex;
+  gap:25px;
+}
+
+.card{
+  flex:1;
+  background:#f0f4ff;
+  padding:30px;
+  border-radius:15px;
+}
+
+.card h3{
+  margin-bottom:15px;
+  color:#1f4ed8;
+}
+
 /* 레이아웃 */
 .container{
   max-width:1272px;
@@ -144,6 +173,16 @@ section{
 .bg-surface{
   background-color:#f9f9f9;
 }
+
+.section-header{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  justify-content:center;
+  gap:16px;
+}
+
 /* 타이포그래피 */
 .primary-color{
   color:var(--e-s-t_blue);
@@ -184,8 +223,72 @@ p{
   font-size:14px;
   vertical-align:baseline;
 }
+.btn-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width: 218px;
+  height: 54px;
+  font-size: var(--button--big);
+  border-radius:5px;
+  border: solid 1px white;
+  background:rgba(0, 0, 0, 0.5);
+  color:var(--white);
+  border-radius:5px;
+  transition:0.3s;
+}
+
+.btn-cta:hover{
+  background-color:var(--e-s-t_blue);
+  color:var(--white);
+  border: solid 1px rgba(1, 1, 1, 0);
+}
+
 /* 타이포그래피 */
+.section-label{
+  font-weight:700;
+  line-height:19px;
+}
+.primary-color{
+  color:var(--e-s-t_blue);
+}
+h2{
+  font-size:var(--text-h2-lg);
+  color:var(--medium--black);
+  font-weight:700;
+  line-height:43px;
+}
+h3{
+  font-size:var(--text-h3-md);
+  font-weight:700;
+  line-height:28.6px;
+}
+p{
+  font-size:var(--text-p);
+  line-height:27px;
+  color:var(--medium--gray);
+}
 /* 링크 버튼 */
+.btn-primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--e-s-t_blue);
+  color:var(--white);
+  border-radius:5px;
+  font-size:var(--text-link);
+  transition:0.3s;
+}
+.btn-primary:hover{
+  background-color:var(--medium--biue);
+  color:var(--e-s-t_blue);
+}
+.btn-md{
+  width:108px;
+  height:36px;
+  font-size:14px;
+  vertical-align:baseline;
+}
 
 /* 헤더 -  */
 /* 푸터 -  */
