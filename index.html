@@ -12,33 +12,154 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
-</head>
-<!-- 헤더 -->
-<!-- 강채희 -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">
-        <a href="index.html">
-          <img src="./images/Logo.svg" alt="">
-          <span class="hidden">EST CAMP</span>
-        </a>
-      </h1>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">인공지능사관학교</a></li>
-          <li><a href="#">오르미 캠프</a></li>
-          <li><a href="#">모집과정</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="btn btn-primary btn-md">지원하기</a>
-      <!-- 토글 버튼 -->
-      <button type="button" class="btn-menu">
-        <span class="toggle-line"></span>
-        <span class="hidden">전체 메뉴</span>
-      </button>
+  </head>
+  <body>
+    <!-- 강채희-->
+    <header class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="" alt="" />
+            <span class="hidden">EST CAMP</span>
+          </a>
+        </h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">인공지능사관학교</a></li>
+            <li><a href="#">오르미 캠프</a></li>
+            <li><a href="#">모집과정</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="btn btn-primary">지원하기</button>
+        <button type="button" class="btn-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 과정 찾기 섹션 -->
+    <section class="course">
+      <div class="course-container">
+        <header class="course-intro">
+          <h2 class="course-title">
+            나에게 맞는 <span>부트캠프 과정</span> 찾기
+          </h2>
+          <a href="#" class="course-cta">자세히 보기</a>
+        </header>
+        <div class="course-grid">
+          <article class="course-card">
+            <div class="course-card-info">
+              <h3 class="course-card-title">입문자<span>기초</span>다지기</h3>
+              <p class="course-card-desc">프로그래밍 기초</p>
+            </div>
+            <div class="course-card-image">
+              <img src="" alt="입문자 과정을 안내하는 알약 캐릭터" />
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-card-info">
+              <h3 class="course-card-title">
+                프론트엔드<span>핵심 인재</span>양성
+              </h3>
+              <p class="course-card-desc">React, TypeScript 마스터</p>
+            </div>
+            <div class="course-card-image">
+              <img src="" alt="프론트엔드 과정을 알약 캐릭터" />
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-card-info">
+              <h3 class="course-card-title">
+                데이터 분석<span>AI 트렌드</span> 리딩
+              </h3>
+              <p class="course-card-desc">Python, 데이터 시각화</p>
+            </div>
+            <div class="course-card-image">
+              <img src="" alt="데이터분석 과정을 알약 캐릭터" />
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-card-info">
+              <h3 class="course-card-title">
+                가디언즈 <span>인프라보안</span>
+              </h3>
+              <p class="course-card-desc">보안 관제, 침해 사고 대응</p>
+            </div>
+            <div class="course-card-image">
+              <img src="" alt="인프라보안 과정을 안내하는 알약 캐릭터" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 커리큘럼 로드맵 -->
+    <header class="curriculum-header">
+      <span class="curriculum-label">CURRICULUM</span>
+      <h2 class="curriculum-title">커리큘럼 로드맵</h2>
+    </header>
+    <div class="curriculum-roadmap">
+      <div class="roadmap-line"></div>
+      <div class="roadmap-items">
+        <article class="roadmap-item">
+          <!-- 각 아이템 위에 놓일 동그라미 -->
+          <div class="roadmap-dot"></div>
+          <h3 class="roadmap-item-title">
+            <span class="curriculum-item-week">1-4주차</span>
+            UI 레이아웃
+          </h3>
+          <p class="curriculum-item-desc">HTML/CSS, Figma AI 활용 UI 설계</p>
+        </article>
+        <article class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <h3 class="roadmap-item-title">
+            <span class="curriculum-item-week">5-9주차</span>
+            JS & 프로그래밍
+          </h3>
+          <p class="curriculum-item-desc">JavaScript, 알고리즘</p>
+        </article>
+        <article class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <h3 class="roadmap-item-title">
+            <span class="curriculum-item-week">10-13주차</span>
+            React 앱 개발
+          </h3>
+          <p class="curriculum-item-desc">리액트, TypeScript</p>
+        </article>
+        <article class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <h3 class="roadmap-item-title">
+            <span class="curriculum-item-week">14-17주차</span>
+            백엔드 기초
+          </h3>
+          <p class="curriculum-item-desc">성능 최적화, Firebase/Supabase</p>
+        </article>
+        <article class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <h3 class="roadmap-item-title">
+            <span class="curriculum-item-week">18주차</span>
+            최종 프로젝트
+          </h3>
+          <p class="curriculum-item-desc">
+            최종 서비스 런칭 및 현직자 취업 특강
+          </p>
+        </article>
+      </div>
     </div>
-  </header>
-<!-- //강채희 -->
+    <a href="#" class="btn btn-secondary">커리큘럼 더보기</a>
+    <!-- //강채희 -->
+
+    <!-- 박소호 -->
+    <!-- hero 섹션 -->
+    <section class="title-hero">
+      <div class="container">
+        <div class="hero-title-box">
+          <span class="category">AI시대, 확실한 커리어</span>
+          <h2 class="text-title-xl">이스트캠프</h1>
+        </div>
+        <p class="hero-title-desc">AI 선도기업에서 만든 실무기반 IT 취업 부트캠프</p>
 
 <!-- 박소호 -->
     <!-- hero 섹션 -->
@@ -56,7 +177,7 @@
             <span class="material-icons">keyboard_arrow_right</span>
           </a>
 
-          <a class="Button-Big" href="#">과정 탐색하기
+          <a class="Button-Big right-btn" href="#">과정 탐색하기
             <span class="material-icons">keyboard_arrow_right</span>
           </a>
         </div>
