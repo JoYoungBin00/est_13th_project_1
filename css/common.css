@@ -1,3 +1,7 @@
+@import url("normalize.css");
+@import url("reset.css");
+@import url("flex-utility.css");
+
 /* 변수 */
 :root{
 /* Color styles */
@@ -37,6 +41,40 @@
 --review_shadow:  0px 4px 4px rgba(0, 0, 0, 0.1);
 
 }
+
+h1{
+  font-family: Pretentard;
+  font-weight: bold;
+  font-size: var(--text-title-xl);
+}
+
+h2{
+  font-family: Pretentard;
+  font-weight: bold;
+  font-size: var(--text-h2-lg);
+}
+
+h3{
+  font-family: Pretentard;
+  font-weight: bold;
+  font-size: var(--text-h3-lg);
+}
+
+p, link{
+  font-family: Pretentard;
+  font-size: var(--text-p);
+}
+
+.icon{
+  font-family: Material Icons;
+}
+
+
+
+
+
+
+
 
 /* 레이아웃 */
 .container{
