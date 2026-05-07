@@ -1,0 +1,28 @@
+.online-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.online-category{
+  display: flex;
+  gap: 24px;
+}
+.online-category button{
+    padding: 4px 20px;
+    border-radius: 50px;
+    background: var(--light--gray);
+    color:var(--medium--gray);
+    font-size: var(--text-p);
+    line-height: 27px;
+    cursor:pointer;
+    transition:all 0.2s ease;
+}
+.online-category button:hover {
+  background: var(--medium--biue);
+  color: var(--e-s-t_blue);
+}
+/* 활성화 상태 */
+.online-category button.active {
+  background: var(--medium--biue);
+  color: var(--e-s-t_blue);
+}
