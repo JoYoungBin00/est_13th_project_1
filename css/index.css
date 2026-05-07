@@ -1,3 +1,5 @@
+@import url(common.css);
+
 .container{
   display:flex;
   flex-direction:column;
@@ -143,3 +145,110 @@
   transform: translate(-50%, -50%);
   }
 } */
+
+
+.hero{
+    background-image: url(/img/jeju_orumi_background.jpg);
+    height: 720px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero .hero-content-subtitle{
+    font-family: Pretendard;
+    font-weight: semibold;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--medium--biue)
+}
+
+.hero .hero-content-description{
+    margin-bottom: 54px;
+}
+
+.hero h2{
+    margin-bottom: 12px;
+    color: white;
+}
+
+.hero p{
+    color: white;
+}
+
+
+
+.camp-story{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.camp-story .header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px 324px 60px 324px;
+    gap: 10px;
+}
+
+.camp-story-layout{
+    display: flex;
+    justify-content: center;
+}
+
+.camp-story .main-card{
+    padding-right: 27px;
+}
+
+.camp-story .card-text{
+  background-color: var(--light--gray);
+  border-radius: 0 0 10px 10px;
+}
+
+.card-text .main-card-title{
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.card-text .main-card-subtitle
+{
+  padding-left: 20px;
+}
+
+.card-text .icon{
+  padding: 14px 10px 14px 10px;
+  font-size: 24px;
+  color: var(--e-s-t_blue);
+}
+
+
+.small-card-title{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    background-color: var(--light--gray);
+    color: var(--black);
+    padding: 10px 0px 10px 10px;
+    border: 1px solid red;
+    border-radius: 0 0 10px 10px;
+}
+
+.camp-story .icon{
+    text-align: right;
+    color: var(--e-s-t_blue);
+}
+
+
+.camp-story-sidelist{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
