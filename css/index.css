@@ -85,3 +85,18 @@
 .online-content h3 {
   color: var(--medium--black);
 }
+@media (max-width: 1024px) {
+  .online-content ul{
+    width: 100%;
+    flex-wrap:wrap;
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .online-intro{
+    align-items: center;
+  }
+  .slides_nav {
+    display: none;
+  }
+}
