@@ -158,11 +158,64 @@ body{
 
 
 
-
-
-
-
 /* 레이아웃 */
+.container{
+  max-width:1272px;
+  margin:0 auto;
+}
+.hidden{
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip-path:inset(50%);
+}
+section{
+  padding:80px 0;
+}
+.bg-surface{
+  background-color:#f9f9f9;
+}
+/* 타이포그래피 */
+.primary-color{
+  color:var(--e-s-t_blue);
+}
+h2{
+  font-size:var(--text-h2-lg);
+  color:var(--medium--black);
+  font-weight:700;
+}
+h3{
+  font-size:var(--text-h3-md);
+  font-weight:700;
+  line-height:28.6px;
+}
+p{
+  font-size:var(--text-p);
+  line-height:27px;
+  color:var(--medium--gray);
+}
+/* 링크 버튼 */
+.btn-primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--e-s-t_blue);
+  color:var(--white);
+  border-radius:5px;
+  font-size:var(--text-link);
+  transition:0.3s;
+}
+.btn-primary:hover{
+  background-color:var(--medium--biue);
+  color:var(--e-s-t_blue);
+}
+.btn-md{
+  width:108px;
+  height:36px;
+  font-size:14px;
+  vertical-align:baseline;
+}
 /* 타이포그래피 */
 /* 링크 버튼 */
 
