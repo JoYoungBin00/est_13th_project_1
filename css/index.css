@@ -49,17 +49,18 @@
     flex-direction: column;
     margin: 80px 324px 60px 324px;
     gap: 10px;
-    border: 1px solid red;
 }
 
 .camp-story-layout{
     display: flex;
     justify-content: center;
-    gap:28px;
+}
+
+.camp-story .main-card{
+    padding-right: 27px;
 }
 
 .camp-story .card-text{
- 
   background-color: var(--light--gray);
   border-radius: 0 0 10px 10px;
 }
@@ -86,10 +87,16 @@
     display: flex;
     justify-content: left;
     flex-direction: row;
+    background-color: var(--light--gray);
+    color: var(--black);
+    padding: 10px 0px 10px 10px;
+    border: 1px solid red;
+    border-radius: 0 0 10px 10px;
 }
 
 .camp-story .icon{
     text-align: right;
+    color: var(--e-s-t_blue);
 }
 
 
