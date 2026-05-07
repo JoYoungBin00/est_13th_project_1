@@ -8,7 +8,7 @@
 --medium--gray: rgba(107, 118, 132, 1);
 --light--gray: rgba(217, 217, 217, 1);
 --light--blue: rgba(240, 247, 255, 1);
---medium--biue: rgba(229, 241, 255, 1);
+--medium--blue: rgba(229, 241, 255, 1);
 --liner: rgba(162, 162, 162, 1);
 --slides-gray: rgba(238, 238, 238, 1);
 --medium-gray2: rgba(104, 104, 104, 1);
@@ -56,7 +56,19 @@ section{
 .bg-surface{
   background-color:#f9f9f9;
 }
+.section-header{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  justify-content:center;
+  gap:16px;
+}
 /* 타이포그래피 */
+.section-label{
+  font-weight:700;
+  line-height:19px;
+}
 .primary-color{
   color:var(--e-s-t_blue);
 }
@@ -64,6 +76,7 @@ h2{
   font-size:var(--text-h2-lg);
   color:var(--medium--black);
   font-weight:700;
+  line-height:43px;
 }
 h3{
   font-size:var(--text-h3-md);
