@@ -1,3 +1,4 @@
+/* 배너 이미지 */
 .title-hero {
   height: 800px;
   background-image: url(/images/hero-banner.jpg);
@@ -7,6 +8,7 @@
   z-index:1;
 }
 
+/* 컨테이너 */
 .container{
   height: 100%;
   display: flex;
@@ -15,6 +17,7 @@
   gap: 40px;
 }
 
+/* 타이틀 텍스트 */
 .hero-title-box{
   display: flex;
   flex-direction: column;
@@ -50,6 +53,7 @@
   color: var(--white);
 }
 
+/* 버튼링크 박스 */
 .title-button-box {
   display: flex;
   gap: 44px;
