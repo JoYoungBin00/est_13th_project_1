@@ -193,6 +193,10 @@ section {
   }
 }
 
+.reviewtitle {
+  text-align: center;
+}
+
 .review-content,
 .online-content ul {
   display: flex;
@@ -337,7 +341,7 @@ p{
   font-size:14px;
   vertical-align:baseline;
 }
-/* 슬라이드 */
+
 .slides_nav {
   display: flex;
   gap: 10px;
