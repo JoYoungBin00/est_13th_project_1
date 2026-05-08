@@ -1,0 +1,802 @@
+/* 온라인 */
+.online .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.online-content {
+  padding: 0;
+}
+/* 온라인헤더 */
+.online-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.online-category {
+  display: flex;
+  gap: 24px;
+}
+.online-category button {
+  padding: 4px 20px;
+  border-radius: 50px;
+  background: var(--light--gray);
+  color: var(--medium--gray);
+  font-size: var(--text-p);
+  line-height: 27px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.online-category button:hover {
+  background: var(--medium--blue);
+  color: var(--e-s-t_blue);
+}
+/* 활성화 상태 */
+.online-category button.active {
+  background: var(--medium--blue);
+  color: var(--e-s-t_blue);
+}
+/* 슬라이드네비
+.slides_nav {
+  display: flex;
+  gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.slide-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: var(--light--gray);
+  color:var(--medium--gray);
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.slide-btn:hover {
+  background: var(--medium--blue);
+  color: var(--e-s-t_blue);
+}
+.slide-btn.next {
+  background: var(--medium--blue);
+  color: var(--e-s-t_blue);
+} */
+/* 온라인 컨텐츠 */
+.online-content ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.online-content ul li {
+  height: 396px;
+}
+
+.online-content img {
+  border-radius: 5px;
+}
+
+.online-content .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.online-content h3 {
+  color: var(--medium--black);
+}
+@media (max-width: 1024px) {
+  .online-content ul {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .online-intro {
+    align-items: center;
+  }
+  .slides_nav {
+    display: none;
+  }
+}
+/* 온라인 */
+
+/* hero */
+/* 배너 이미지 */
+.title-hero {
+  height: 800px;
+  background-image: url(/images/hero-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  z-index: 1;
+}
+
+/* 컨테이너 */
+.title-hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* 타이틀 텍스트 */
+.hero-title-box {
+  display: flex;
+  flex-direction: column;
+  height: 126px;
+  padding: 0px;
+  gap: 10px;
+}
+.hero-title-box h2 {
+  color: var(--white);
+  font-size: var(--text-title-xl);
+  line-height: 81px;
+}
+
+.hero-title-box span {
+  width: 149px;
+  height: 35px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Pretendard";
+  background: var(--light--blue);
+  color: var(--e-s-t_blue);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  line-height: 27px;
+}
+.hero-title-desc {
+  font-size: 24px;
+  line-height: 27px;
+  font-family: "Pretendard";
+  font-weight: 400;
+  color: var(--white);
+}
+
+/* 버튼링크 박스 */
+.title-button-box {
+  display: flex;
+  gap: 44px;
+}
+
+.title-button-box .Button-Big {
+  width: 174px;
+  height: 54px;
+  font-size: var(--button--big);
+  font-family: "Pretendard";
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border-radius: 5px;
+}
+/* button style */
+.title-button-box .left-btn {
+  background: var(--e-s-t_blue);
+  transition: 0.3s ease;
+}
+.title-button-box .right-btn {
+  border: 1px solid var(--white);
+  transition: 0.3s ease;
+}
+
+.title-button-box .left-btn:hover{
+  background: var(--light--blue);
+  color: var(--e-s-t_blue);
+}
+.title-button-box .right-btn:hover{
+  border: 1px solid var(--e-s-t_blue);
+  background: var(--e-s-t_blue);
+}
+
+/* @media */
+@media (max-width: 1024px) {
+  .title-hero .container {
+    width: 100%;
+    align-items: center;
+  }
+  .hero-title-box {
+    align-items: center;
+  }
+}
+
+/* 헤더 */
+.main-header{
+  position:sticky;
+  background-color:#ffffff;
+  box-shadow:0 2px 10px rgba(0, 0, 0, .05);
+  top:0;
+  z-index:100;
+  padding:22px 0;
+}
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  height: 25px;
+}
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+nav li a {
+  display: block;
+  font-size: var(--text-link);
+  line-height: 27px;
+  color: var(--medium--black);
+}
+header .btn-md {
+  width: 108px;
+  height: 36px;
+  font-size: 14px;
+  vertical-align: baseline;
+}
+.btn-menu {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .main-header {
+    padding: 16px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .main-header {
+    padding: 12px 20px;
+  }
+  .btn-menu {
+    display: block;
+    position: relative;
+    width: 28px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  .toggle-line,
+  .toggle-line::before,
+  .toggle-line::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: 0.3s;
+  }
+  .toggle-line {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .toggle-line::before {
+    top: -8px;
+  }
+  .toggle-line::after {
+    top: 8px;
+  }
+  .btn-menu.is-active .toggle-line {
+    background-color: transparent;
+  }
+  .btn-menu.is-active .toggle-line::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .btn-menu.is-active .toggle-line::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .main-header .btn {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+}
+/* 과정 찾기 섹션 */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.course-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course-title {
+  line-height: 43px;
+}
+#course .title-line {
+  display: block;
+}
+.course-grid {
+  max-width: 840px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.course-card {
+  padding: 30px;
+  display: flex;
+  min-height: 216px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: var(--white);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
+}
+.course-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.course-card-image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+@media (max-width:1024px){
+  #course .container{
+    flex-direction:column;
+    gap:50px;
+  }
+  .course-intro {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .course-grid {
+    max-width: 964px;
+  }
+}
+@media (max-width: 768px) {
+  .course-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .course-grid {
+    grid-template-columns: repeat(1, 4fr);
+  }
+}
+/* 커리큘럼 섹션 */
+@import url(common.css);
+
+#curriculum .container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:90px;
+}
+.roadmap-items{
+  display:flex;
+  gap:125px;
+  justify-content:space-between;
+}
+.roadmap-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width:164px;
+  gap:10px;
+}
+.roadmap-item-title{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.roadmap-item-title::after{
+  content:'';
+  display:block;
+  width:163px;
+  height:1px;
+  background-color:var(--liner);
+}
+.roadmap-item:first-child .roadmap-item-title::after,
+.roadmap-item:last-child .roadmap-item-title::after{
+  width:140px;
+}
+.curriculum-item-week{
+  display:block;
+  font-size:16px;
+}
+.roadmap-item:first-child,
+.roadmap-item:last-child{
+  width:140px;
+}
+.roadmap-dot{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  background-color:#d9e5ff;
+  box-shadow:0 0 20px rgba(0, 117, 255, .4);
+  border-radius:50%;
+  margin-bottom:10px;
+  transition:.3s ease;
+}
+.roadmap-dot::after{
+  content:'';
+  display:block;
+  width:20px;
+  height:20px;
+  background-color:var(--e-s-t_blue);
+  border-radius:50%;
+  transition:transform 0.3s ease;
+  box-shadow:0 0 10px 2px rgba(0, 117, 255, 0.6);
+  will-change:filter;
+  filter:blur(1px);
+  backface-visibility:hidden;
+}
+.curriculum-roadmap{
+  position:relative;
+}
+.roadmap-line{
+  height:1px;
+  background-color:var(--e-s-t_blue);
+  position:absolute;
+  top:20px;
+  width:100%;
+  left:0;
+}
+.curriculum-btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:120px;
+  height:34px;
+  margin-top:6px;
+  box-sizing:border-box;
+  background-color:var(--medium--blue);
+  color:var(--e-s-t_blue);
+  border-radius:5px;
+  transition:.3s;
+}
+.curriculum-btn:hover{
+  background-color:var(--e-s-t_blue);
+  color:var(--medium--blue);
+}
+
+@media (max-width:1024px){
+  
+}
+/* @media (max-width:768px){
+  .roadmap-items{
+    display:grid;
+    grid-template-rows:repeat(5, auto);
+    row-gap:40px;
+  }
+  .roadmap-item{
+    width:100%;
+    display:grid;
+    grid-template-columns:40px 1fr;
+    column-gap:30px;
+    row-gap:0;
+    justify-content: start;
+    align-items:center;
+  }
+  .roadmap-line{
+    position:absolute;
+    width:1px;
+    height:100%;
+    left:20px;
+    top:-4px;
+    z-index:-1;
+  }
+  .roadmap-dot{
+    grid-column:1;
+    grid-row:1/3;
+    align-self:start;
+  }
+  .curriculum-item-desc{
+    grid-column:2;
+  }
+  .roadmap-item-title,
+  .curriculum-item-desc {
+  margin: 0; 
+  padding: 0;
+  .roadmap-item-title {
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .roadmap-item-title::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px; 
+  } */
+
+/* .curriculum-roadmap{
+  position:relative;
+  max-width:1272px;
+  width:100%;
+  margin:0 auto;
+  padding:0 50px;
+  box-sizing:border-box;
+}
+.curriculum-item-week {
+  font-size: 1rem;
+  display: block;
+  line-height: 19.1px;
+  margin-top: 20px;
+}
+.roadmap-line {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background: var(--e-s-t_blue);
+  top: 110px;
+}
+.roadmap-items {
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  z-index:2;
+  width:100%;
+  margin:90px 0 96px 0;
+}
+.roadmap-item {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.roadmap-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: calc(243px / 2);
+  width: 10px;
+  height: 10px;
+  background-color: var(--e-s-t_blue);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.roadmap-item-title,
+.curriculum-item-desc {
+  width: max-content;
+  text-align: center;
+  white-space: nowrap; 
+}
+.roadmap-item-title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--liner);
+  width: 163px;
+  margin: 10px auto;
+}
+.roadmap-item-title .curriculum-item-week {
+  margin-bottom: 10px;
+}
+.roadmap-item:first-child .roadmap-item-title::after,
+.roadmap-item:last-child .roadmap-item-title::after {
+  width: 140px;
+  margin: 10px auto;
+}
+.roadmap-dot {
+  width: 40px;
+  height: 40px;
+  background-color: #d9e5ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 243px;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 0 20px rgba(0, 117, 255, 0.4);
+}
+.roadmap-dot::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--e-s-t_blue);
+  filter: blur(2px);
+  border-radius: 50%;
+}
+#curriculum .curriculum-btn{
+  width:120px;
+  line-height:34px;
+  font-size:var(--text-p);
+  color:var(--e-s-t_blue);
+  background-color:var(--medium--blue);
+  text-align:center;
+  border-radius:5px;
+  transition:.3s;
+  cursor:pointer;
+}
+#curriculum .curriculum.-tn:hover{
+  background-color:var(--e-s-t_blue);
+  color:var(--white);
+} */
+
+/* @media (max-width: 1024px) {
+  .roadmap-items {
+    height: 300px; 
+    display: flex;
+    align-items: center; 
+  }
+
+  .roadmap-item {
+    position: relative;
+    width: 40px;
+  }
+  .roadmap-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .roadmap-item:nth-child(odd) .roadmap-item-title {
+    margin-bottom: 80px;
+  }
+  .roadmap-item:nth-child(even) .roadmap-item-title {
+    margin-top: 80px; 
+  }
+  .roadmap-line{
+    top:240px;
+  }
+  .roadmap-item:not(:last-child)::after {
+  top: 50%; 
+  left: calc(243px / 2); 
+  transform: translate(-50%, -50%);
+  }
+} */
+
+/* 컨텐츠 hero 섹션 */
+.camp-story .container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.hero{
+    background-image: url(/img/jeju_orumi_background.jpg);
+    height: 720px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .btn-cta{
+  width: 218px;
+  height: 54px;
+}
+
+.hero .hero-content-subtitle{
+    font-family: Pretendard;
+    font-weight: semibold;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--medium--blue)
+}
+
+.hero .hero-content-description{
+    margin-bottom: 54px;
+}
+
+.hero h2{
+    margin-bottom: 12px;
+    color: white;
+}
+
+.hero p{
+    color: white;
+}
+/* //컨텐츠 hero 섹션 */
+
+/* 이스트 캠프 이야기 섹션 */
+.camp-story{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.camp-story .header{
+    width: 1272px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    align-items: top left;
+    gap: 10px;
+}
+
+.camp-story-layout{
+    display: flex;
+    justify-content: center;
+}
+
+.camp-story .main-card{
+    padding-right: 27px;
+}
+
+.camp-story .card-text{
+  background-color: var(--light--gray);
+  border-radius: 0 0 10px 10px;
+}
+
+.card-text .main-card-title{
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 14px;
+}
+
+.card-text .main-card-subtitle
+{
+  padding-left: 20px;
+}
+
+.main-card .icon{
+  /* padding: 7px 10px 14px 10px; */
+  padding-right: 10px;
+  padding-bottom: 7px;
+  font-size: 24px;
+  color: var(--e-s-t_blue);
+}
+
+.main-card img{
+    border-radius: 10px 10px 0 0;
+}
+
+.camp-story .icon{
+    text-align: right;
+    font-size: 18px;
+    color: var(--e-s-t_blue);
+}
+
+.camp-story-sidelist{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.small-card-title{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--light--gray);
+    color: var(--black);
+    padding: 10px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.small-card img{
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* 이스트 캠프 이야기 섹션 */
