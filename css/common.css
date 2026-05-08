@@ -183,6 +183,12 @@ section{
   gap:16px;
 }
 
+.review-content,
+.online-content ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* 타이포그래피 */
 .primary-color{
   color:var(--e-s-t_blue);
