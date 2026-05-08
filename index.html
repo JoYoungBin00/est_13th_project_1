@@ -3,19 +3,334 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>EST Camp</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+      }
+
+      /* blue block */
+
+      .banner {
+        width: 100%;
+        height: 320px;
+        background: linear-gradient(135deg, #081a52, #1f4ed8, #6d28d9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .banner-content {
+        text-align: center;
+      }
+
+      .banner-content h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .banner-content p {
+        font-size: 22px;
+        margin-bottom: 25px;
+      }
+
+      .banner-content button {
+        padding: 12px 30px;
+        border: none;
+        border-radius: 30px;
+        background: white;
+        color: #1f4ed8;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* 밑블럭 */
+
+      .content {
+        width: 1100px;
+        margin: 50px auto;
+        background: white;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .content h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #111;
+      }
+
+      .content p {
+        color: #666;
+        line-height: 1.7;
+        margin-bottom: 30px;
+      }
+
+      .cards {
+        display: flex;
+        gap: 25px;
+      }
+
+      .card {
+        flex: 1;
+        background: #f0f4ff;
+        padding: 30px;
+        border-radius: 15px;
+      }
+
+      .card h3 {
+        margin-bottom: 15px;
+        color: #1f4ed8;
+      }
+    </style>
   </head>
   <body>
-    <title>EST Camp</title>
+    <!-- 헤더 -->
+    <!-- 강채희 -->
+    <header class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="" alt="" />
+            <span class="hidden">EST CAMP</span>
+          </a>
+        </h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">인공지능사관학교</a></li>
+            <li><a href="#">오르미 캠프</a></li>
+            <li><a href="#">모집과정</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="btn btn-primary">지원하기</button>
+        <button type="button" class="btn-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <!-- //강채희 -->
+
+    <!-- 온라인과정 섹션 -->
+    <!-- 박소호 -->
+    <section class="online">
+      <header class="online-intro">
+        <h2 class="text-h2-lg">이스트소프트 부트캠프</h2>
+        <nav class="online-category">
+          <ul>
+            <li class="text-p on_category">
+              <button class="active">온라인과정</button>
+            </li>
+            <li class="text-p on-off_category">
+              <button>온/오프라인과정</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <!-- //박소호 -->
+    <!-- 콘텐츠 -->
+    <!-- 송주윤 -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-content-subtitle">Career</p>
+        <div class="hero-content-description">
+          <h2>제주 오르미 캠프</h2>
+          <p>
+            제주에서 9주간 숙식과 교육비 전액을 지원받으며 실무 프로젝트에만 몰입하는 하이엔드
+            개발자 양성 과정 입니다.
+          </p>
+        </div>
+
+        <a href="" class="btn btn-primary">보러가기</a>
+      </div>
+    </section>
+
+    <section class="camp-story">
+      <div class="header">
+        <h2>이스트 캠프 콘텐츠</h2>
+        <p>이스트 캠프의 생생한 이야기</p>
+      </div>
+
+      <div class="camp-story-layout">
+        <article class="main-card">
+          <img src="img/big-card.jpg" alt="메인카드 사진" />
+          <div class="card-text">
+            <h3 class="main-card-title">부트캠프 만으로 진짜 취업할 수 있을까?</h3>
+            <p class="main-card-subtitle">
+              청년 고용률의 내리막... 현실은 잔혹하지만 돌파구는 있습니다.
+            </p>
+            <p class="icon">arrow_forward</p>
+          </div>
+        </article>
+
+        <div class="camp-story-sidelist">
+          <article class="small-card">
+            <img src="img/small-card1.jpg" alt="카드 리스트 사진1" />
+            <p class="small-card-title">
+              우리는 조금 느렸지만, 분명 다릅니다 <span class="icon">keyboard_arrow_right</span>
+            </p>
+          </article>
+          <article class="small-card">
+            <img src="img/small-card2.jpg" alt="카드 리스트 사진2" />
+            <p class="small-card-title">“결정적 차이? AI 시대 맞춤 교육이...</p>
+            <p class="icon">keyboard_arrow_right</p>
+          </article>
+          <article class="small-card">
+            <img src="img/small-card3.jpg" alt="카드 리스트 사진3" />
+            <p class="small-card-title">‘저희를 믿고 한걸음 내딛어 주세요’</p>
+            <span class="icon">keyboard_arrow_right</span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- //송주윤 -->
+    <!-- 과정 찾기 섹션 -->
+    <!-- 강채희 -->
+    <section class="course">
+      <div class="course-container">
+        <header class="course-intro">
+          <h2 class="course-title">나에게 맞는 <span>부트캠프 과정</span> 찾기</h2>
+          <a href="#" class="course-cta">자세히 보기</a>
+        </header>
+        <div class="course-grid">
+          <article class="course-card">
+            <div class="course-card-info">
+              <h3 class="course-card-title">입문자<span>기초</span>다지기</h3>
+              <p class="course-card-desc">프로그래밍 기초</p>
+            </div>
+            <div class="course-card-image">
+              <img src="" alt="입문자 과정을 안내하는 알약 캐릭터" />
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-card-info">
+              <h3 class="course-card-title">프론트엔드<span>핵심 인재</span>양성</h3>
+              <p class="course-card-desc">React, TypeScript 마스터</p>
+            </div>
+            <div class="course-card-image">
+              <img src="" alt="프론트엔드 과정을 알약 캐릭터" />
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-card-info">
+              <h3 class="course-card-title">데이터 분석<span>AI 트렌드</span> 리딩</h3>
+              <p class="course-card-desc">Python, 데이터 시각화</p>
+            </div>
+            <div class="course-card-image">
+              <img src="" alt="데이터분석 과정을 알약 캐릭터" />
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-card-info">
+              <h3 class="course-card-title">가디언즈 <span>인프라보안</span></h3>
+              <p class="course-card-desc">보안 관제, 침해 사고 대응</p>
+            </div>
+            <div class="course-card-image">
+              <img src="" alt="인프라보안 과정을 안내하는 알약 캐릭터" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- //강채희 -->
+    <!-- 커리큘럼 로드맵 -->
+    <!-- 강채희 -->
+    <header class="curriculum-header">
+      <span class="curriculum-label">CURRICULUM</span>
+      <h2 class="curriculum-title">커리큘럼 로드맵</h2>
+    </header>
+    <div class="curriculum-roadmap">
+      <div class="roadmap-line"></div>
+      <div class="roadmap-items">
+        <article class="roadmap-item">
+          <!-- 각 아이템 위에 놓일 동그라미 -->
+          <div class="roadmap-dot"></div>
+          <h3 class="roadmap-item-title">
+            <span class="curriculum-item-week">1-4주차</span>
+            UI 레이아웃
+          </h3>
+          <p class="curriculum-item-desc">HTML/CSS, Figma AI 활용 UI 설계</p>
+        </article>
+        <article class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <h3 class="roadmap-item-title">
+            <span class="curriculum-item-week">5-9주차</span>
+            JS & 프로그래밍
+          </h3>
+          <p class="curriculum-item-desc">JavaScript, 알고리즘</p>
+        </article>
+        <article class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <h3 class="roadmap-item-title">
+            <span class="curriculum-item-week">10-13주차</span>
+            React 앱 개발
+          </h3>
+          <p class="curriculum-item-desc">리액트, TypeScript</p>
+        </article>
+        <article class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <h3 class="roadmap-item-title">
+            <span class="curriculum-item-week">14-17주차</span>
+            백엔드 기초
+          </h3>
+          <p class="curriculum-item-desc">성능 최적화, Firebase/Supabase</p>
+        </article>
+        <article class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <h3 class="roadmap-item-title">
+            <span class="curriculum-item-week">18주차</span>
+            최종 프로젝트
+          </h3>
+          <p class="curriculum-item-desc">최종 서비스 런칭 및 현직자 취업 특강</p>
+        </article>
+      </div>
+    </div>
+    <a href="#" class="btn btn-secondary">커리큘럼 더보기</a>
+    <!-- //강채희 -->
+
+    <!-- 박소호 -->
+    <!-- hero 섹션 -->
+    <!-- <section class="hero">
+        <div class="hero-container">
+          <img src="" alt="AI배너이미지">
+            <div class="hero-title-box">
+                <div class="category">
+                    <a href="#">AI시대, 확실한 커리어</a>
+                </div>
+                <h1 class="text-title-xl">이스트캠프</h1>
+            </div>
+            <p class="desc">AI 선도기업에서 만든 실무기반 IT 취업 부트캠프</p>
+
+            <div class="title-button-box">
+                <button class="left-btn">
+                    <a class="Button-Big" href="#">지원하기</a>
+                    <span class="material-icons">keyboard_arrow_right</span>
+                </button>
+                
+                <button class="right-btn">
+                    <a class="Button-Big" href="#">과정 탐색하기</a>
+                    <span class="material-icons">keyboard_arrow_right</span>
+                </button> -->
+
+    <!-- //박소호 -->
 
     <!-- 조영빈 -->
     <!-- Review -->
-
     <section>
       <header class="container reviewtitle">
         <p>review</p>
@@ -87,5 +402,45 @@
       </ul>
     </section>
     <!-- //조영빈 -->
+    <!-- //조영빈 -->
+    <!-- 최이리나 -->
+    <!-- blue block -->
+    <div class="banner">
+      <div class="banner-content">
+        <h1>EST CAMP</h1>
+
+        <p>
+          2026 인공지능사관학교<br />
+          7기 교육생 모집
+        </p>
+
+        <button>보러가기</button>
+      </div>
+    </div>
+
+    <!-- 밑블럭 -->
+    <div class="content">
+      <h2>이스트소프트 부트캠프</h2>
+
+      <p>실무 중심 프로젝트와 AI 기반 웹 개발 교육을 진행합니다.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>프론트엔드 과정</h3>
+          <p>HTML CSS JavaScript 학습</p>
+        </div>
+
+        <div class="card">
+          <h3>백엔드 과정</h3>
+          <p>서버와 데이터베이스 개발</p>
+        </div>
+
+        <div class="card">
+          <h3>AI 프로젝트</h3>
+          <p>AI 활용 실전 프로젝트</p>
+        </div>
+      </div>
+    </div>
+    <!-- //최이리나 -->
   </body>
 </html>
