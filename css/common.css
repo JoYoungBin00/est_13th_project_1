@@ -12,7 +12,7 @@
 --medium--gray: rgba(107, 118, 132, 1);
 --light--gray: rgba(217, 217, 217, 1);
 --light--blue: rgba(240, 247, 255, 1);
---medium--biue: rgba(229, 241, 255, 1);
+--medium--blue: rgba(229, 241, 255, 1);
 --liner: rgba(162, 162, 162, 1);
 --slides-gray: rgba(238, 238, 238, 1);
 --medium-gray2: rgba(104, 104, 104, 1);
@@ -40,6 +40,12 @@
 /* Effect styles */
 --review_shadow:  0px 4px 4px rgba(0, 0, 0, 0.1);
 
+}
+html{
+  background-color:#ffffff;
+}
+body{
+  overscroll-behavior-y:none;
 }
 
 h1{
@@ -70,7 +76,12 @@ p, link{
 }
 
 
-
+a{
+  cursor:pointer;
+}
+button{
+  cursor:pointer;
+}
 
 
 
@@ -88,7 +99,41 @@ p, link{
   overflow:hidden;
   clip-path:inset(50%);
 }
+section{
+  padding:80px 0;
+}
+.bg-surface{
+  background-color:#f9f9f9;
+}
+@media (max-width:1024px){
+  section{
+    padding:60px 30px;
+  }
+}
+@media (max-width:768px){
+  section{
+    padding:40px 20px;
+  }
+}
 /* 타이포그래피 */
+.primary-color{
+  color:var(--e-s-t_blue);
+}
+h2{
+  font-size:var(--text-h2-lg);
+  color:var(--medium--black);
+  font-weight:700;
+}
+h3{
+  font-size:var(--text-h3-md);
+  font-weight:700;
+  line-height:28.6px;
+}
+p{
+  font-size:var(--text-p);
+  line-height:27px;
+  color:var(--medium--gray);
+}
 /* 링크 버튼 */
 .btn-primary{
   display:inline-flex;
@@ -99,6 +144,16 @@ p, link{
   border-radius:5px;
   font-size:var(--text-link);
   transition:0.3s;
+}
+.btn-primary:hover{
+  background-color:var(--medium--blue);
+  color:var(--e-s-t_blue);
+}
+.btn-md{
+  width:108px;
+  height:36px;
+  font-size:14px;
+  vertical-align:baseline;
 }
 /* 헤더 -  */
 /* 푸터 -  */
