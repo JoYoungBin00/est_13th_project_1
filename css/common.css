@@ -45,6 +45,7 @@ html{
 }
 body{
   overscroll-behavior-y:none;
+  background-color:#ffffff;
 }
 
 h1 {
@@ -74,16 +75,6 @@ link {
 .icon {
   font-family: Material Icons;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-}
 
 /* blue block */
 
@@ -95,6 +86,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+}
 a{
   cursor:pointer;
 }
@@ -125,7 +117,12 @@ button{
   font-weight: bold;
   cursor: pointer;
 }
-
+.section-header{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  align-items:center;
+}
 /* 밑블럭 */
 
 .content {
@@ -214,6 +211,9 @@ p {
   font-size: var(--text-p);
   line-height: 27px;
   color: var(--medium--gray);
+}
+.section-label{
+  font-weight:700;
 }
 /* 링크 버튼 */
 .btn-primary {

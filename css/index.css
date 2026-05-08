@@ -197,7 +197,7 @@
 
 /* @media */
 @media (max-width: 1024px) {
-  .container {
+  .title-hero .container {
     width: 100%;
     align-items: center;
   }
@@ -213,7 +213,6 @@
   box-shadow:0 2px 10px rgba(0, 0, 0, .05);
   top:0;
   z-index:100;
-  width:100%;
   padding:22px 0;
 }
 header > .container{
@@ -300,7 +299,7 @@ header .btn-md{
 }
 /* 과정 찾기 섹션 */
 
-.container{
+#course .container{
   display:flex;
   justify-content: space-between;
 }
@@ -344,7 +343,7 @@ header .btn-md{
   flex-shrink:0;
 }
 @media (max-width:1024px){
-  .container{
+  #course .container{
     flex-direction:column;
     gap:50px;
   }
@@ -369,12 +368,154 @@ header .btn-md{
 /* 커리큘럼 섹션 */
 @import url(common.css);
 
-.container{
+#curriculum .container{
   display:flex;
   flex-direction:column;
   align-items:center;
+  gap:90px;
+}
+.roadmap-items{
+  display:flex;
+  gap:125px;
+  justify-content:space-between;
+}
+.roadmap-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width:164px;
+  gap:10px;
+}
+.roadmap-item-title{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.roadmap-item-title::after{
+  content:'';
+  display:block;
+  width:163px;
+  height:1px;
+  background-color:var(--liner);
+}
+.roadmap-item:first-child .roadmap-item-title::after,
+.roadmap-item:last-child .roadmap-item-title::after{
+  width:140px;
+}
+.curriculum-item-week{
+  display:block;
+  font-size:16px;
+}
+.roadmap-item:first-child,
+.roadmap-item:last-child{
+  width:140px;
+}
+.roadmap-dot{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  background-color:#d9e5ff;
+  box-shadow:0 0 20px rgba(0, 117, 255, .4);
+  border-radius:50%;
+  margin-bottom:10px;
+  transition:.3s ease;
+}
+.roadmap-dot::after{
+  content:'';
+  display:block;
+  width:20px;
+  height:20px;
+  background-color:var(--e-s-t_blue);
+  border-radius:50%;
+  transition:transform 0.3s ease;
+  box-shadow:0 0 10px 2px rgba(0, 117, 255, 0.6);
+  will-change:filter;
+  filter:blur(1px);
+  backface-visibility:hidden;
 }
 .curriculum-roadmap{
+  position:relative;
+}
+.roadmap-line{
+  height:1px;
+  background-color:var(--e-s-t_blue);
+  position:absolute;
+  top:20px;
+  width:100%;
+  left:0;
+}
+.curriculum-btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:120px;
+  height:34px;
+  margin-top:6px;
+  box-sizing:border-box;
+  background-color:var(--medium--blue);
+  color:var(--e-s-t_blue);
+  border-radius:5px;
+  transition:.3s;
+}
+.curriculum-btn:hover{
+  background-color:var(--e-s-t_blue);
+  color:var(--medium--blue);
+}
+
+@media (max-width:1024px){
+  
+}
+/* @media (max-width:768px){
+  .roadmap-items{
+    display:grid;
+    grid-template-rows:repeat(5, auto);
+    row-gap:40px;
+  }
+  .roadmap-item{
+    width:100%;
+    display:grid;
+    grid-template-columns:40px 1fr;
+    column-gap:30px;
+    row-gap:0;
+    justify-content: start;
+    align-items:center;
+  }
+  .roadmap-line{
+    position:absolute;
+    width:1px;
+    height:100%;
+    left:20px;
+    top:-4px;
+    z-index:-1;
+  }
+  .roadmap-dot{
+    grid-column:1;
+    grid-row:1/3;
+    align-self:start;
+  }
+  .curriculum-item-desc{
+    grid-column:2;
+  }
+  .roadmap-item-title,
+  .curriculum-item-desc {
+  margin: 0; 
+  padding: 0;
+  .roadmap-item-title {
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .roadmap-item-title::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px; 
+  } */
+}
+/* .curriculum-roadmap{
   position:relative;
   max-width:1272px;
   width:100%;
@@ -401,6 +542,7 @@ header .btn-md{
   justify-content: space-between;
   position:relative;
   z-index:2;
+  width:100%;
   margin:90px 0 96px 0;
 }
 .roadmap-item{
@@ -424,9 +566,9 @@ header .btn-md{
 }
 .roadmap-item-title,
 .curriculum-item-desc {
-  width: max-content; /* ★ 핵심: 글자 길이에 맞춰서 너비를 가짐 */
+  width: max-content;
   text-align: center;
-  white-space: nowrap; /* ★ 핵심: 부모가 좁아도 줄바꿈 금지 */
+  white-space: nowrap; 
 }
 .roadmap-item-title::after{
   content:"";
@@ -465,7 +607,7 @@ header .btn-md{
   filter:blur(2px);
   border-radius: 50%;
 }
-#curriculum .btn{
+#curriculum .curriculum-btn{
   width:120px;
   line-height:34px;
   font-size:var(--text-p);
@@ -476,10 +618,10 @@ header .btn-md{
   transition:.3s;
   cursor:pointer;
 }
-#curriculum .btn:hover{
+#curriculum .curriculum.-tn:hover{
   background-color:var(--e-s-t_blue);
   color:var(--white);
-}
+} */
 
 /* @media (max-width: 1024px) {
   .roadmap-items {
