@@ -40,14 +40,17 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+    align-items: center;
+    
 }
 
 .camp-story .header{
+    width: 1272px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 80px 324px 60px 324px;
+    margin-bottom: 60px;
+    align-items: top left;
     gap: 10px;
 }
 
@@ -68,7 +71,7 @@
 .card-text .main-card-title{
   padding-top: 24px;
   padding-left: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }
 
 .card-text .main-card-subtitle
@@ -76,26 +79,37 @@
   padding-left: 20px;
 }
 
-.card-text .icon{
-  padding: 14px 10px 14px 10px;
+.main-card .icon{
+  /* padding: 7px 10px 14px 10px; */
+  padding-right: 10px;
+  padding-bottom: 7px;
   font-size: 24px;
   color: var(--e-s-t_blue);
+}
+
+.main-card img{
+    border-radius: 10px 10px 0 0;
 }
 
 
 .small-card-title{
     display: flex;
-    justify-content: left;
+    justify-content: space-between;  
+    align-items: center;
     flex-direction: row;
     background-color: var(--light--gray);
     color: var(--black);
     padding: 10px 0px 10px 10px;
-    border: 1px solid red;
     border-radius: 0 0 10px 10px;
+}
+
+.small-card img{
+    border-radius: 10px 10px 0 0;
 }
 
 .camp-story .icon{
     text-align: right;
+    font-size: 18px;
     color: var(--e-s-t_blue);
 }
 
@@ -104,4 +118,5 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    /* gap: 32.5px; */
 }
