@@ -671,6 +671,12 @@ header .btn-md {
 } */
 
 /* 컨텐츠 hero 섹션 */
+.camp-story .container {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .hero{
     background-image: url(/img/jeju_orumi_background.jpg);
     height: 720px;
