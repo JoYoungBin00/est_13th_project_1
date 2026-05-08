@@ -486,7 +486,7 @@ header .btn-md{
   }
 } */
 
-
+/* 컨텐츠 hero 섹션 */
 .hero{
     background-image: url(/img/jeju_orumi_background.jpg);
     height: 720px;
@@ -499,13 +499,17 @@ header .btn-md{
     text-align: center;
 }
 
+.hero .btn-cta{
+  width: 218px;
+  height: 54px;
+}
 
 .hero .hero-content-subtitle{
     font-family: Pretendard;
     font-weight: semibold;
     font-size: 28px;
     margin-bottom: 30px;
-    color: var(--medium--biue)
+    color: var(--medium--blue)
 }
 
 .hero .hero-content-description{
@@ -520,9 +524,9 @@ header .btn-md{
 .hero p{
     color: white;
 }
+/* //컨텐츠 hero 섹션 */
 
-
-
+/* 이스트 캠프 이야기 섹션 */
 .camp-story{
     display: flex;
     justify-content: center;
@@ -578,7 +582,17 @@ header .btn-md{
     border-radius: 10px 10px 0 0;
 }
 
+.camp-story .icon{
+    text-align: right;
+    font-size: 18px;
+    color: var(--e-s-t_blue);
+}
 
+.camp-story-sidelist{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 .small-card-title{
     display: flex;
     justify-content: space-between;  
@@ -594,16 +608,5 @@ header .btn-md{
     border-radius: 10px 10px 0 0;
 }
 
-.camp-story .icon{
-    text-align: right;
-    font-size: 18px;
-    color: var(--e-s-t_blue);
-}
 
-
-.camp-story-sidelist{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    /* gap: 32.5px; */
-}
+/* 이스트 캠프 이야기 섹션 */
