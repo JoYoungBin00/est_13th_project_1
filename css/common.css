@@ -213,11 +213,19 @@ p {
   font-size: 14px;
   vertical-align: baseline;
 }
-.slide-btn {
+.slide-btn,
+.more {
   display: flex;
   justify-content: flex-end;
 }
 .reviewtitle {
+  text-align: center;
+}
+.review {
+  display: flex;
+  gap: 25px;
+}
+.review_card {
   text-align: center;
 }
 /* 타이포그래피 */
