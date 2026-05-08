@@ -528,13 +528,17 @@ header .btn-md{
     text-align: center;
 }
 
+.hero .btn-cta{
+  width: 218px;
+  height: 54px;
+}
 
 .hero .hero-content-subtitle{
     font-family: Pretendard;
     font-weight: semibold;
     font-size: 28px;
     margin-bottom: 30px;
-    color: var(--medium--biue)
+    color: var(--medium--blue)
 }
 
 .hero .hero-content-description{
