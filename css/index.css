@@ -31,13 +31,7 @@
   background: var(--medium--blue);
   color: var(--e-s-t_blue);
 }
-
 /* 온라인 컨텐츠 */
-.online-content ul {
-  display: flex;
-  justify-content: space-between;
-}
-
 .online-content ul li {
   height: 396px;
 }
