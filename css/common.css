@@ -313,6 +313,20 @@ p {
   color: var(--white);
 }
 
+.Button-Big{
+  width: 174px;
+  height: 54px;
+  font-size: var(--button--big);
+  font-family: 'Pretendard';
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
 .btn-md {
   width: 108px;
   height: 36px;
@@ -348,12 +362,6 @@ p {
 .slide-btn.next {
   background: var(--medium--blue);
   color: var(--e-s-t_blue);
-}
-
-.review-content ul,
-.online-content ul {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* 타이포그래피 */

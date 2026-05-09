@@ -181,26 +181,12 @@
   gap: 44px;
 }
 
-.title-button-box .Button-Big {
-  width: 174px;
-  height: 54px;
-  font-size: var(--button--big);
-  font-family: "Pretendard";
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--white);
-  border-radius: 5px;
-}
 /* button style */
 .title-button-box .left-btn {
   background: var(--e-s-t_blue);
-  transition: 0.3s ease;
 }
 .title-button-box .right-btn {
   border: 1px solid var(--white);
-  transition: 0.3s ease;
 }
 
 .title-button-box .left-btn:hover{
@@ -914,7 +900,7 @@ footer{
 }
 
 .hero{
-    background-image: url(/img/jeju_orumi_background.jpg);
+    background-image: url(/images/jeju_orumi_background.jpg);
     height: 720px;
     background-repeat:no-repeat;
     background-size: cover;
@@ -960,7 +946,7 @@ footer{
     align-items: center;
     
 }
-
+/* 
 .camp-story .header{
     width: 1272px;
     display: flex;
@@ -969,7 +955,7 @@ footer{
     margin-bottom: 60px;
     align-items: top left;
     gap: 10px;
-}
+} */
 
 .camp-story-layout{
     display: flex;
@@ -977,7 +963,7 @@ footer{
 }
 
 @media (max-width: 1296px) {
-  .camp-story .header{
+  .camp-story .intro-header{
     display: grid;
     justify-content: left;
     padding-left: 150px;
@@ -997,7 +983,7 @@ footer{
 }
 
 @media (max-width: 1024px) {
-  .camp-story .header{
+  .camp-story .intro-header{
     padding: 0;
   }
   .camp-story-layout {
