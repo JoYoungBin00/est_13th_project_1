@@ -481,194 +481,6 @@ header .btn-md {
 @media (max-width:1024px){
   
 }
-/* @media (max-width:768px){
-  .roadmap-items{
-    display:grid;
-    grid-template-rows:repeat(5, auto);
-    row-gap:40px;
-  }
-  .roadmap-item{
-    width:100%;
-    display:grid;
-    grid-template-columns:40px 1fr;
-    column-gap:30px;
-    row-gap:0;
-    justify-content: start;
-    align-items:center;
-  }
-  .roadmap-line{
-    position:absolute;
-    width:1px;
-    height:100%;
-    left:20px;
-    top:-4px;
-    z-index:-1;
-  }
-  .roadmap-dot{
-    grid-column:1;
-    grid-row:1/3;
-    align-self:start;
-  }
-  .curriculum-item-desc{
-    grid-column:2;
-  }
-  .roadmap-item-title,
-  .curriculum-item-desc {
-  margin: 0; 
-  padding: 0;
-  .roadmap-item-title {
-    position: relative;
-    padding-bottom: 10px;
-  }
-
-  .roadmap-item-title::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100px; 
-  } */
-
-/* .curriculum-roadmap{
-  position:relative;
-  max-width:1272px;
-  width:100%;
-  margin:0 auto;
-  padding:0 50px;
-  box-sizing:border-box;
-}
-.curriculum-item-week {
-  font-size: 1rem;
-  display: block;
-  line-height: 19.1px;
-  margin-top: 20px;
-}
-.roadmap-line {
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  left: 0;
-  background: var(--e-s-t_blue);
-  top: 110px;
-}
-.roadmap-items {
-  display: flex;
-  justify-content: space-between;
-  position:relative;
-  z-index:2;
-  width:100%;
-  margin:90px 0 96px 0;
-}
-.roadmap-item {
-  width: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-.roadmap-item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: calc(243px / 2);
-  width: 10px;
-  height: 10px;
-  background-color: var(--e-s-t_blue);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-.roadmap-item-title,
-.curriculum-item-desc {
-  width: max-content;
-  text-align: center;
-  white-space: nowrap; 
-}
-.roadmap-item-title::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: var(--liner);
-  width: 163px;
-  margin: 10px auto;
-}
-.roadmap-item-title .curriculum-item-week {
-  margin-bottom: 10px;
-}
-.roadmap-item:first-child .roadmap-item-title::after,
-.roadmap-item:last-child .roadmap-item-title::after {
-  width: 140px;
-  margin: 10px auto;
-}
-.roadmap-dot {
-  width: 40px;
-  height: 40px;
-  background-color: #d9e5ff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 243px;
-  position: relative;
-  z-index: 3;
-  box-shadow: 0 0 20px rgba(0, 117, 255, 0.4);
-}
-.roadmap-dot::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: var(--e-s-t_blue);
-  filter: blur(2px);
-  border-radius: 50%;
-}
-#curriculum .curriculum-btn{
-  width:120px;
-  line-height:34px;
-  font-size:var(--text-p);
-  color:var(--e-s-t_blue);
-  background-color:var(--medium--blue);
-  text-align:center;
-  border-radius:5px;
-  transition:.3s;
-  cursor:pointer;
-}
-#curriculum .curriculum.-tn:hover{
-  background-color:var(--e-s-t_blue);
-  color:var(--white);
-} */
-
-/* @media (max-width: 1024px) {
-  .roadmap-items {
-    height: 300px; 
-    display: flex;
-    align-items: center; 
-  }
-
-  .roadmap-item {
-    position: relative;
-    width: 40px;
-  }
-  .roadmap-dot {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-  }
-  .roadmap-item:nth-child(odd) .roadmap-item-title {
-    margin-bottom: 80px;
-  }
-  .roadmap-item:nth-child(even) .roadmap-item-title {
-    margin-top: 80px; 
-  }
-  .roadmap-line{
-    top:240px;
-  }
-  .roadmap-item:not(:last-child)::after {
-  top: 50%; 
-  left: calc(243px / 2); 
-  transform: translate(-50%, -50%);
-  }
-} */
 
 /* 컨텐츠 hero 섹션 */
 .camp-story .container {
@@ -740,13 +552,51 @@ header .btn-md {
     justify-content: center;
 }
 
+@media (max-width: 1296px) {
+  .camp-story .header{
+    display: grid;
+    justify-content: left;
+    padding-left: 150px;
+  }
+   
+  .camp-story-layout {
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .camp-story-layout .camp-story-sidelist{
+    margin-top: 24px;
+    flex-direction: row;
+    gap:28px;
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  .camp-story .header{
+    padding: 0;
+  }
+  .camp-story-layout {
+    max-width: 964px;
+  }
+}
+
+@media (max-width: 768px) {
+  .camp-story-layout{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .camp-story .main-card{
+  /* width: 948px; */
     padding-right: 27px;
 }
 
 .camp-story .card-text{
   background-color: var(--light--gray);
   border-radius: 0 0 10px 10px;
+  width: 948px;
 }
 
 .card-text .main-card-title{
@@ -783,6 +633,7 @@ header .btn-md {
     flex-direction: column;
     gap: 24px;
 }
+
 .small-card-title{
     display: flex;
     justify-content: space-between;  
