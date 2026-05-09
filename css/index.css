@@ -367,27 +367,45 @@ header .btn-md{
   }
 }
 /* 커리큘럼 섹션 */
+#curriculum::after{
+  content:'';
+  display:block;
+  height:1px;
+  background-color:var(--liner);
+  max-width:1272px;
+  width:calc(100% - 40px);
+  margin:115px auto 0;
+}
 #curriculum .container{
   display:flex;
-  flex-direction:column;
-  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap:90px;
 }
-.roadmap-items{
-  display:flex;
-  list-style:none;
-  padding:0;
-  margin:0;
-  gap:125px;
-  justify-content:space-between;
+.curriculum-roadmap {
+  grid-template-columns: repeat(9, 1fr);
+  position: relative;
+  width: 100%;
+  max-width: 1272px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  box-sizing:border-box;
 }
-.roadmap-item{
+.roadmap-items{
+  grid-column: 1 / -1;
   display:flex;
-  flex-direction:column;
-  align-items:center;
+  justify-content:space-between;
   text-align:center;
-  width:164px;
-  gap:10px;
+  margin-top:160px;
+  position:relative;
+}
+.roadmap-item {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .roadmap-item-title{
   display:flex;
@@ -411,26 +429,28 @@ header .btn-md{
 }
 .roadmap-item:first-child,
 .roadmap-item:last-child{
-  width:140px;
+  width:auto;
 }
-.roadmap-dots-group{
-  top:20px;
-  left:50%;
-  width:100%;
-  max-width:869px;
-  pointer-events:none;
-  position:absolute;
-  transform:translateX(-50%);
-  display:flex;
-  justify-content:space-between;
-  box-sizing:border-box;
+.roadmap-dots-group {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 1;
 }
-.sub-dot{
-  width:10px;
-  height:10px;
-  border-radius:50%;
+.sub-dot:nth-child(1) { grid-column: 2; }
+.sub-dot:nth-child(2) { grid-column: 4; }
+.sub-dot:nth-child(3) { grid-column: 6; }
+.sub-dot:nth-child(4) { grid-column: 8; }
+
+.sub-dot {
+  justify-self: center;
+  width:10px; height:10px;
   background-color:var(--e-s-t_blue);
-  transform:translateY(-50%);
+  border-radius:50%;
 }
 .roadmap-dot{
   display:flex;
@@ -443,6 +463,16 @@ header .btn-md{
   border-radius:50%;
   margin-bottom:10px;
   transition:.3s ease-out;
+  margin-bottom:20px;
+}
+.curriculum-item-desc{
+  margin-top:10px;
+}
+.roadmap-item-title,
+.curriculum-item-desc {
+  min-width: 0; 
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 .roadmap-item:hover{
   transform:scale(1.05);
@@ -473,17 +503,14 @@ header .btn-md{
   filter:blur(1px);
   backface-visibility:hidden;
 }
-.curriculum-roadmap{
-  position:relative;
-}
 .roadmap-line{
-  height:1px;
-  background-color:var(--e-s-t_blue);
-  position:absolute;
-  top:20px;
-  width:100%;
-  left:0;
-  z-index:0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  height: 1px;
+  background: var(--e-s-t_blue);
 }
 .curriculum-btn{
   display:flex;
@@ -502,13 +529,10 @@ header .btn-md{
   background-color:var(--e-s-t_blue);
   color:var(--medium--blue);
 }
+
 @media (max-width: 1024px) {
-  #curriculum .container {
-    gap: 150px; 
-  }
   .curriculum-roadmap {
     width: 100%;
-    max-width: 964px;
     margin: 0 auto;
     position: relative;
     min-height: 350px; 
@@ -519,17 +543,15 @@ header .btn-md{
     position: absolute;
     top: 50%;
     left: 0;
-    width: 100%;
     height: 1px;
     background-color: var(--e-s-t_blue);
     transform: translateY(-50%);
     z-index: 0;
   }
-  .roadmap-items, .roadmap-dots-group {
+  .roadmap-items{
     display: grid;
     grid-template-columns: repeat(9, minmax(0, 1fr)); 
     width: 100%;
-    max-width: 964px;
     margin: 0 auto;
     gap: 0; 
     padding: 0;
@@ -540,7 +562,7 @@ header .btn-md{
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(calc(-50% + 5px));
+    transform: translateY(-50%);
   }
   .sub-dot {
     grid-column: span 1;
@@ -754,10 +776,6 @@ footer{
   justify-content: space-between;
   align-items:flex-start;
   margin-top:60px;
-}
-.footer-info,
-.sns-links{
-  min-width:0;
 }
 .sns-links{
   display:flex;
