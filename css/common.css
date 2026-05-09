@@ -1,6 +1,7 @@
 @import url("normalize.css");
 @import url("reset.css");
 @import url("flex-utility.css");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
 
 /* 변수 */
 :root{
@@ -48,6 +49,9 @@ html{
 body{
   overscroll-behavior-y:none;
   background-color:#ffffff;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  -webkit-font-smoothing: antialiased; /* 글꼴 외곽선 정밀도 향상 */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .text-title-xl {
@@ -87,18 +91,12 @@ link {
 .icon {
   font-family: Material Icons;
 }
-
+.btn-primary:focus-visible{
+  outline:2px solid var(--e-s-t_blue);
+  outline-offset:2px;
+}
 /* blue block */
 
-.banner {
-  width: 100%;
-  height: 320px;
-  background: linear-gradient(135deg, #081a52, #1f4ed8, #6d28d9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
 a{
   cursor:pointer;
 }
@@ -177,7 +175,7 @@ button{
 
 /* 레이아웃 */
 .container {
-  max-width: 1272px;
+  max-width:min(100% - 60px, 1272px);
   margin: 0 auto;
 }
 .hidden {
@@ -203,6 +201,9 @@ section {
   section{
     padding:40px 20px;
   }
+  .container{
+    width:min(100% - 40px, 1272px);
+  }
 }
 
 .reviewtitle {
@@ -216,6 +217,11 @@ section {
 }
 
 /* 타이포그래피 */
+.text-title-xl{
+  font-size:var(--text-title-xl);
+  color:var(--white);
+  line-height:81px;
+}
 .primary-color {
   color: var(--e-s-t_blue);
 }
@@ -236,6 +242,28 @@ p {
 }
 .section-label{
   font-weight:700;
+}
+@media (max-width:1024px){
+  .text-title-xl{
+    font-size:48px;
+  }
+  .text-h2-lg{
+    font-size:32px;
+  }
+  .text-h3-md{
+    font-size:20px;
+  }
+}
+@media (max-width:768px){
+  .text-title-xl{
+    font-size:36px;
+  }
+  .text-h2-lg{
+    font-size:26px;
+  }
+  .text-h3-md{
+    font-size:18px;
+  }
 }
 /* 링크 버튼 */
 .btn-primary {
@@ -365,6 +393,12 @@ p{
   background:rgba(0, 0, 0, 0.5);
   color:var(--white);
   transition:0.3s;
+}
+
+.btn-cta:hover{
+  background-color:var(--e-s-t_blue);
+  color:var(--white);
+  border-color:var(--e-s-t_blue);
 }
 
 .slides_nav {
