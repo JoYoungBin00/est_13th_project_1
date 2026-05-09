@@ -222,6 +222,7 @@ header > .container{
 }
 header .logo{
   height:25px;
+  transition:.3s ease;
 }
 .logo a{
   display:block;
@@ -362,11 +363,10 @@ header .btn-md{
     gap:20px;
   }
   .course-grid{
-    grid-template-columns:repeat(1, 4fr);
+    grid-template-columns:1fr
   }
 }
 /* 커리큘럼 섹션 */
-
 #curriculum .container{
   display:flex;
   flex-direction:column;
@@ -375,6 +375,9 @@ header .btn-md{
 }
 .roadmap-items{
   display:flex;
+  list-style:none;
+  padding:0;
+  margin:0;
   gap:125px;
   justify-content:space-between;
 }
@@ -409,9 +412,6 @@ header .btn-md{
 .roadmap-item:first-child,
 .roadmap-item:last-child{
   width:140px;
-}
-.curriculum-roadmap{
-  position:relative;
 }
 .roadmap-dots-group{
   top:20px;
@@ -485,7 +485,6 @@ header .btn-md{
   left:0;
   z-index:0;
 }
-
 .curriculum-btn{
   display:flex;
   justify-content: center;
@@ -503,7 +502,6 @@ header .btn-md{
   background-color:var(--e-s-t_blue);
   color:var(--medium--blue);
 }
-
 @media (max-width: 1024px) {
   #curriculum .container {
     gap: 150px; 
@@ -544,7 +542,6 @@ header .btn-md{
     left: 0;
     transform: translateY(calc(-50% + 5px));
   }
-
   .sub-dot {
     grid-column: span 1;
     justify-self: center; 
@@ -559,7 +556,6 @@ header .btn-md{
     position: relative;
     width: 100%;
   }
-
   .roadmap-item {
     grid-column: span 1;
     display: flex;
@@ -576,8 +572,7 @@ header .btn-md{
   .roadmap-item:nth-child(5) { grid-column: 9; justify-self: end; align-items: flex-end; }
   .roadmap-item-title,
   .curriculum-item-desc {
-    white-space: nowrap;
-    text-align: inherit; 
+    text-align:center; 
   }
   .roadmap-item:nth-child(even) {
     transform: translateY(calc(-50% + 20px)); /* 작성하신 보정값 유지 */
@@ -614,8 +609,7 @@ header .btn-md{
   }
   .roadmap-item-title,
   .curriculum-item-desc {
-    white-space: nowrap;
-    text-align: center; 
+    overflow:hidden;
   }
 }
 @media (max-width:768px){
@@ -674,33 +668,163 @@ header .btn-md{
     flex-shrink:0;
   }
   .roadmap-item-title{
-  grid-column:2;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+    grid-column:2;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
     align-items:center;
-  text-align:center;
-
-  margin:0;
-}
+    text-align:center;
+    margin:0;
+  }
   .roadmap-item-title::after{
     content:'';
-
     display:block;
-
     width:100%;
     max-width:140px;
-
     height:1px;
-
     margin-top:8px;
-
     background-color:var(--liner);
   }
   .curriculum-item-desc{
     grid-column:2;
     margin:0;
     text-align:center;
+  }
+}
+/* 베너 */
+.banner{
+  width:100%;
+  min-height:100%;
+  padding:149px 0;
+  background:url("../images/banner.jpg") no-repeat center / cover;
+  box-sizing:border-box;
+}
+.banner-content{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+.banner .button-big{
+  align-self:flex-end;
+}
+.banner .text-title-xl{
+  text-align:left;
+}
+@media (max-width:1024px){
+  section.banner{
+    padding:60px 30px;
+  }
+}
+@media (max-width:768px){
+  section.banner{
+    padding:40px 20px;
+  }
+  .banner-content{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+  }
+  .banner .button-big{
+    align-self:center;
+  }
+  .banner .text-title-xl{
+    text-align:center;
+  }
+}
+/* 푸터 */
+footer{
+  padding:56px 0;
+  color:var(--medium-gray2);;
+  font-size:14px;
+  line-height:27px;
+}
+.footer-logo{
+  line-height:0;
+}
+.footer-logo img{
+  filter:brightness(0);
+  transition:.3s ease;
+}
+.footer-info address{
+  display:flex;
+  flex-direction:column;
+}
+.footer-md{
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-top:60px;
+}
+.sns-links{
+  display:flex;
+  gap:10px;
+  margin-top:4px;
+}
+.sns-links a{
+  background-color:#a4a4a4;
+  border-radius:50%;
+  width:36px;
+  height:36px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-policy{
+  border-top:1px solid var(--liner);
+  margin-top:20px;
+  padding-top:20px;
+}
+.policy-links{
+  display:flex;
+}
+.policy-links a{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+.policy-links a::after{
+  content:'';
+  width:1px;
+  height:14px;
+  background-color:var(--medium-gray2);
+  margin-right:5px;
+}
+.policy-links a:last-child::after{
+  display:none;
+}
+@media (max-width:1024px){
+  footer{
+    padding:60px 30px;
+  }
+}
+@media (max-width:768px){
+  footer{
+    padding:40px 20px;
+  }
+  footer .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+  }
+  .footer-md{
+    flex-direction:column-reverse;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+  }
+  .policy-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .footer-policy{
+    width:100%;
+    margin-top:0;
+  }
+  .policy-links a::after {
+    display: none;
   }
 }
 
