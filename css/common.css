@@ -321,7 +321,7 @@ p{
   font-size:14px;
   vertical-align:baseline;
 }
-.button-big{
+.btn-cta{
   border:1px solid var(--white);
   border-radius:100px;
   font-size:var(--button-big);
@@ -332,9 +332,9 @@ p{
   line-height:54px;
   color:var(--white);
 }
-.button-big:hover{
+.btn-cta:hover{
   background-color:var(--e-s-t_blue);
-  color:inherit;
+  color:var(--white);
   border-color:var(--e-s-t_blue);
 }
 /* 헤더 -  */
