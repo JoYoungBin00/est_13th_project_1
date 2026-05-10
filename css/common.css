@@ -42,7 +42,7 @@
 --review_shadow:  0px 4px 4px rgba(0, 0, 0, 0.1);
 
 }
-
+/* 다크모드 변수 */
 [data-theme="dark"]{
   --text-base:#F8FAFC;
   --text-muted:#94A3B8;
@@ -63,6 +63,8 @@
 
   --section-label:rgb(99, 102, 241);
 
+  --slide-ctg:#6B7684;
+
   --dot-strong:#6366f1;
   --dot-soft:rgba(49, 60, 95, .18);
   --dot-shadow:0 0 20px rgba(99, 102, 241, .4);
@@ -81,6 +83,54 @@
   --btn-inactive-online:var(--darkmode-card);
   --btn-inactive-review:var(--darkmode-card);
 }
+/* hero-online다크모드 적용 */
+  /* 온라인 bg */
+[data-theme="dark"] .online {
+  background: var(--bg-base);
+}
+/* 온라인 bg */
+
+  /* 텍스트 */
+[data-theme="dark"] .text-h2-lg {
+  color: var(--text-online);
+}
+[data-theme="dark"] .online-content .text-h3-md {
+  color: var(--text-online);
+}
+[data-theme="dark"] .text-p {
+  color: var(--text-muted);
+}
+[data-theme="dark"] .category {
+  background: var(--roadmap-week);
+  color: #fff;
+}
+/* 텍스트 */
+
+/* 버튼 */
+[data-theme="dark"] .title-button-box .left-btn {
+  background: var(--btn-strong);
+}
+[data-theme="dark"] .title-button-box .left-btn:hover{
+  color: var(--btn-strong);
+}
+[data-theme="dark"] .online-category .active {
+  background: var(--slide-ctg);
+  color: var(--text-base);
+}
+[data-theme="dark"] .slides_nav .next {
+  background: var(--slide-ctg);
+  color: var(--text-base);
+}
+[data-theme="dark"] .online-category .disabled {
+  background: var(--card-bg2);
+  color: var(--slide-ctg);
+}
+[data-theme="dark"] .slides_nav .prev {
+  background: var(--card-bg2);
+  color: var(--slide-ctg);
+}
+/* 버튼 */
+/* 다크모드 적용 */
 
 .text-title-xl {
   font-family: Pretentard;
