@@ -1143,6 +1143,10 @@ footer{
   background-color: var(--card-bg);
   color: var(--white);
 }
+[data-theme="dark"] .camp-story-sidelist .icon{
+  color: var(--medium--blue);
+}
+
 
 
 /* 이스트 캠프 이야기 섹션 */
