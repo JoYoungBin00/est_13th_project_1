@@ -146,6 +146,102 @@ body {
   overscroll-behavior-y: none;
   background-color: #ffffff;
 }
+/* 다크모드 변수 */
+[data-theme="dark"]{
+  --text-base:#F8FAFC;
+  --text-muted:#94A3B8;
+  --text-muted2:#cbd5e1;
+  --text-point:#6366F1;
+  --text-dark:#F8FAFC;
+  --text-online:#F8FAFC;
+  --btn-text:#f8fafc;
+  --nav-text:#cbd5e1;
+
+  --liner:#686868;
+
+  --bg-base:#111827;
+  --bg-muted:#0b1020;
+
+  --card-bg:#1A2236;
+  --card-bg2:#1A2236;
+
+  --section-label:rgb(99, 102, 241);
+
+  --slide-ctg:#6B7684;
+
+  --dot-strong:#6366f1;
+  --dot-soft:rgba(49, 60, 95, .18);
+  --dot-shadow:0 0 20px rgba(99, 102, 241, .4);
+  --roadmap-item-hover:
+    0 0 10px rgba(99, 102, 241, .8),
+    0 0 30px rgba(99, 102, 241, .4),
+    0 0 50px rgba(99, 102, 241, .2);
+  --roadmap-item-after-hover:#9a9be9;
+  --roadmap-week:#64748b;
+  --roadmap-btn:rgba(99, 102, 241, .12);
+  --roadmap-text-color:#cbd5e1;
+
+  --btn-strong:#6366f1;
+  --btn-soft:#e0e7ff;
+  --btn-active:var(--medium--gray);
+  --btn-inactive-online:var(--darkmode-card);
+  --btn-inactive-review:var(--darkmode-card);
+}
+/* hero-online다크모드 적용 */
+  /* 온라인 bg */
+[data-theme="dark"] .online {
+  background: var(--bg-base);
+}
+/* 온라인 bg */
+
+  /* 텍스트 */
+[data-theme="dark"] .text-h2-lg {
+  color: var(--text-online);
+}
+[data-theme="dark"] .online-content .text-h3-md {
+  color: var(--text-online);
+}
+[data-theme="dark"] .text-p {
+  color: var(--text-muted);
+}
+[data-theme="dark"] .category {
+  background: var(--roadmap-week);
+  color: #fff;
+}
+/* 텍스트 */
+
+/* 버튼 */
+  /* hero 버튼 */
+[data-theme="dark"] .title-button-box .left-btn {
+  background: var(--btn-strong);
+}
+[data-theme="dark"] .title-button-box .left-btn:hover {
+  color: var(--btn-strong);
+}
+[data-theme="dark"] .title-button-box .right-btn:hover {
+  background: var(--btn-strong);
+}
+  /* hero 버튼 */
+  /* online 버튼 */
+[data-theme="dark"] .online-category .active {
+  background: var(--slide-ctg);
+  color: var(--text-base);
+}
+[data-theme="dark"] .slides_nav .next {
+  background: var(--slide-ctg);
+  color: var(--text-base);
+}
+[data-theme="dark"] .online-category .disabled {
+  background: var(--card-bg2);
+  color: var(--slide-ctg);
+}
+[data-theme="dark"] .slides_nav .prev {
+  background: var(--card-bg2);
+  color: var(--slide-ctg);
+}
+  /* online 버튼 */
+/* 버튼 */
+/* hero-online다크모드 --------------- */
 
 .text-title-xl {
   font-family: Pretentard;
@@ -474,6 +570,21 @@ p{
   color:var(--medium--gray);
 }
 /* 링크 버튼 */
+.Button-Big{
+  width: 174px;
+  height: 54px;
+  font-size: var(--button--big);
+  font-family: 'Pretendard';
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+
 .btn-primary{
   display:inline-flex;
   align-items:center;

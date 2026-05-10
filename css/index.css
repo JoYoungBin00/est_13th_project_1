@@ -181,6 +181,18 @@
   gap: 44px;
 }
 
+/* .title-button-box .Button-Big {
+  width: 174px;
+  height: 54px;
+  font-size: var(--button--big);
+  font-family: 'Pretendard';
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border-radius: 5px;
+} */
 /* button style */
 .title-button-box .left-btn {
   background: var(--e-s-t_blue);
