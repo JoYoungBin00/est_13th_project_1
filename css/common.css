@@ -460,8 +460,6 @@ section {
   display: flex;
   justify-content: flex-end;
 }
-.faq_list {
-}
 
 /* 타이포그래피 */
 .text-title-xl{
@@ -606,36 +604,6 @@ p {
 }
 .btn-text{
   color:var(--btn-text);
-}
-.slide-btn,
-.more {
-  display: flex;
-  gap: 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.slide-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background: var(--light--gray);
-  color: var(--medium--gray);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slide-btn:hover {
-  background: var(--medium--blue);
-  color: var(--e-s-t_blue);
-}
-.slide-btn.next {
-  background: var(--medium--blue);
-  color: var(--e-s-t_blue);
 }
 
 /* 타이포그래피 */
