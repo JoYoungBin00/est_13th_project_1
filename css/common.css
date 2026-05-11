@@ -483,6 +483,10 @@ section {
 }
 .faq_item {
   padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.faq_item:last-child {
+  border-bottom: none;
 }
 /* 타이포그래피 */
 .text-title-xl {
