@@ -670,19 +670,6 @@ p{
   color:var(--white);
   border-color:var(--btn-strong);
 }
-.btn-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 218px;
-  height: 54px;
-  font-size: var(--button--big);
-  border-radius: 50px;
-  border: solid 1px white;
-  background: rgba(0, 0, 0, 0.5);
-  color: var(--white);
-  transition: 0.3s;
-}
 
 .btn-cta:hover {
   background-color: var(--e-s-t_blue);
