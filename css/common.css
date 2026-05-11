@@ -671,11 +671,6 @@ p{
   border-color:var(--btn-strong);
 }
 
-.btn-cta:hover {
-  background-color: var(--e-s-t_blue);
-  color: var(--white);
-  border-color: var(--e-s-t_blue);
-}
 
 .slides_nav {
   display: flex;
