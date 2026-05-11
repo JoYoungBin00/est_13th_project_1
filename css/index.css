@@ -94,15 +94,30 @@
   .online-content ul {
     width: 100%;
     flex-wrap: wrap;
-    padding: 30px;
+  }
+  .text-h2-lg {
+    font-size: 32px;
+  }
+  .text-h3-md {
+    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
-  .online-intro {
+  .online-content ul{
+    justify-content: center;
+  }
+  .intro-header{
     align-items: center;
+    justify-content: center;
   }
   .slides_nav {
-    display: none;
+    justify-content: center;
+  }
+  .text-h2-lg {
+    font-size: 26px;
+  }
+  .text-h3-md {
+    font-size: 18px;
   }
 }
 /* 온라인 */
@@ -169,26 +184,24 @@
   gap: 44px;
 }
 
-.title-button-box .Button-Big {
+/* .title-button-box .Button-Big {
   width: 174px;
   height: 54px;
   font-size: var(--button--big);
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
   font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--white);
   border-radius: 5px;
-}
+} */
 /* button style */
 .title-button-box .left-btn {
   background: var(--e-s-t_blue);
-  transition: 0.3s ease;
 }
 .title-button-box .right-btn {
   border: 1px solid var(--white);
-  transition: 0.3s ease;
 }
 
 .title-button-box .left-btn:hover{
@@ -209,12 +222,17 @@
   .hero-title-box {
     align-items: center;
   }
+  .hero-title-box .text-title-xl {
+    font-size: 48px;
+  }
+  .hero-title-desc {
+    font-size: 20px;
+  }
 }
 
 /* 헤더 */
 .main-header{
   position:sticky;
-  background-color:#ffffff;
   box-shadow:0 2px 10px rgba(0, 0, 0, .05);
   top:0;
   z-index:100;
@@ -227,6 +245,7 @@ header > .container {
 }
 header .logo {
   height: 25px;
+  transition: 0.3s ease;
 }
 .logo a {
   display: block;
@@ -253,9 +272,10 @@ header .btn-md {
   display: none;
 }
 
-@media (max-width: 1024px) {
-  .main-header {
-    padding: 16px 30px;
+
+@media (max-width:1024px){
+  .main-header{
+    padding:16px 30px;
   }
 }
 @media (max-width: 768px) {
@@ -273,14 +293,14 @@ header .btn-md {
   }
   .toggle-line,
   .toggle-line::before,
-  .toggle-line::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #333;
-    transition: 0.3s;
+  .toggle-line::after{
+    content:'';
+    position:absolute;
+    display:block;
+    width:100%;
+    height:2px;
+    background-color:var(--liner);
+    transition:.3s;
   }
   .toggle-line {
     top: 50%;
@@ -311,10 +331,33 @@ header .btn-md {
   }
 }
 /* 과정 찾기 섹션 */
-
-.container {
+#course .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+}
+#course .text-point{
+  color:var(--text-point);
+}
+.course-intro{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+.course-title{
+  line-height:43px;
+}
+#course .title-line{
+  display:block;
+}
+.course-grid{
+  max-width:840px;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  box-sizing:border-box;
+  border-radius:5px;
+  box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.14);
 }
 .course-intro {
   display: flex;
@@ -341,7 +384,6 @@ header .btn-md {
   justify-content: space-between;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: var(--white);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
 }
 .course-card-info {
@@ -374,31 +416,60 @@ header .btn-md {
     align-items: flex-start;
     gap: 20px;
   }
-  .course-grid {
-    grid-template-columns: repeat(1, 4fr);
+  .course-grid{
+    grid-template-columns:1fr
   }
 }
 /* 커리큘럼 섹션 */
-@import url(common.css);
-
+#curriculum{
+  padding-bottom:0;
+}
+#curriculum::after{
+  content:'';
+  display:block;
+  height:1px;
+  background-color:var(--liner);
+  max-width:1272px;
+  width:calc(100% - 40px);
+  margin:115px auto 0;
+}
 #curriculum .container{
+  width: 100%;
   display:flex;
-  flex-direction:column;
-  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap:90px;
 }
-.roadmap-items{
-  display:flex;
-  gap:125px;
-  justify-content:space-between;
+.curriculum-roadmap {
+  grid-template-columns: repeat(9, 1fr);
+  position: relative;
+  width: 100%;
+  max-width: 1272px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  box-sizing:border-box;
 }
-.roadmap-item{
+#curriculum .section-label{
+  margin-bottom:16px;
+}
+.curriculum-item-desc{
+  color:var(--text-muted2);
+}
+.roadmap-items{
+  grid-column: 1 / -1;
   display:flex;
-  flex-direction:column;
-  align-items:center;
+  justify-content:space-between;
   text-align:center;
-  width:164px;
-  gap:10px;
+  margin-top:160px;
+  position:relative;
+}
+.roadmap-item {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .roadmap-item-title{
   display:flex;
@@ -422,7 +493,27 @@ header .btn-md {
 }
 .roadmap-item:first-child,
 .roadmap-item:last-child{
-  width:140px;
+  width:auto;
+}
+.roadmap-dots-group {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.sub-dot:nth-child(1) { grid-column: 2; }
+.sub-dot:nth-child(2) { grid-column: 4; }
+.sub-dot:nth-child(3) { grid-column: 6; }
+.sub-dot:nth-child(4) { grid-column: 8; }
+.sub-dot {
+  justify-self: center;
+  width:10px; height:10px;
+  background-color:var(--dot-strong);
+  border-radius:50%;
 }
 .roadmap-dot{
   display:flex;
@@ -430,18 +521,41 @@ header .btn-md {
   justify-content:center;
   width:40px;
   height:40px;
-  background-color:#d9e5ff;
+  background-color:var(--dot-soft);
   box-shadow:0 0 20px rgba(0, 117, 255, .4);
   border-radius:50%;
   margin-bottom:10px;
-  transition:.3s ease;
+  transition:.3s ease-out;
+  margin-bottom:20px;
+}
+.curriculum-item-desc{
+  margin-top:10px;
+}
+.roadmap-item-title,
+.curriculum-item-desc {
+  min-width: 0; 
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.roadmap-item:hover{
+  transform:scale(1.05);
+  transition:transform .3s ease;
+}
+.roadmap-item:hover .roadmap-dot{
+  transform:scale(1.15);
+  background-color:#fff;
+  box-shadow:var(--roadmap-item-hover);
+}
+.roadmap-dot:hover::after{
+  transform:scale(1.2);
+  background-color:var(--roadmap-item-after-hover);
 }
 .roadmap-dot::after{
   content:'';
   display:block;
   width:20px;
   height:20px;
-  background-color:var(--e-s-t_blue);
+  background-color:var(--dot-strong);
   border-radius:50%;
   transition:transform 0.3s ease;
   box-shadow:0 0 10px 2px rgba(0, 117, 255, 0.6);
@@ -449,16 +563,14 @@ header .btn-md {
   filter:blur(1px);
   backface-visibility:hidden;
 }
-.curriculum-roadmap{
-  position:relative;
-}
 .roadmap-line{
-  height:1px;
-  background-color:var(--e-s-t_blue);
-  position:absolute;
-  top:20px;
-  width:100%;
-  left:0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  height: 1px;
+  background: var(--e-s-t_blue);
 }
 .curriculum-btn{
   display:flex;
@@ -468,207 +580,374 @@ header .btn-md {
   height:34px;
   margin-top:6px;
   box-sizing:border-box;
-  background-color:var(--medium--blue);
-  color:var(--e-s-t_blue);
+  background-color:var(--roadmap-btn);
+  color:var(--roadmap-text-color);
   border-radius:5px;
   transition:.3s;
 }
 .curriculum-btn:hover{
-  background-color:var(--e-s-t_blue);
-  color:var(--medium--blue);
+  background-color:var(--btn-strong);
+  color:var(--text-online);
 }
-
-@media (max-width:1024px){
-  
+.curriculum-item-week{
+  color:var(--roadmap-week);
 }
-/* @media (max-width:768px){
+@media (max-width: 1024px) {
+  .curriculum-roadmap {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 350px; 
+    display: flex;
+    align-items: center;
+  }
+  .roadmap-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background-color: var(--e-s-t_blue);
+    transform: translateY(-50%);
+    z-index: 0;
+  }
   .roadmap-items{
-    display:grid;
-    grid-template-rows:repeat(5, auto);
-    row-gap:40px;
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr)); 
+    width: 100%;
+    margin: 0 auto;
+    gap: 0; 
+    padding: 0;
   }
-  .roadmap-item{
-    width:100%;
-    display:grid;
-    grid-template-columns:40px 1fr;
-    column-gap:30px;
-    row-gap:0;
-    justify-content: start;
-    align-items:center;
+  .roadmap-dots-group {
+    z-index: 1;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
   }
-  .roadmap-line{
-    position:absolute;
-    width:1px;
-    height:100%;
-    left:20px;
-    top:-4px;
-    z-index:-1;
+  .sub-dot {
+    grid-column: span 1;
+    justify-self: center; 
+    align-self: center; 
   }
-  .roadmap-dot{
-    grid-column:1;
-    grid-row:1/3;
-    align-self:start;
+  .sub-dot:nth-child(1) { 
+    grid-column: 2; 
   }
-  .curriculum-item-desc{
-    grid-column:2;
+  .sub-dot:nth-child(2) { 
+    grid-column: 4; 
+  }
+  .sub-dot:nth-child(3) { 
+    grid-column: 6; 
+  }
+  .sub-dot:nth-child(4) { 
+    grid-column: 8; 
+  }
+  .roadmap-items {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+  }
+  .roadmap-item {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    overflow: visible;
+  }
+  .roadmap-item:hover{
+  transform:scale(1.05);
+  transition:transform .3s ease;
+}
+  .roadmap-item:nth-child(1) { 
+    grid-column: 1; 
+    justify-self: start; 
+    align-items: flex-start; 
+  }
+  .roadmap-item:nth-child(2) { 
+    grid-column: 3; 
+    justify-self: center; 
+    align-items: center; 
+  }
+  .roadmap-item:nth-child(3) { 
+    grid-column: 5; 
+    justify-self: center; 
+    align-items: center; 
+  }
+  .roadmap-item:nth-child(4) { 
+    grid-column: 7; 
+    justify-self: center;
+    align-items: center; }
+  .roadmap-item:nth-child(5) { 
+    grid-column: 9; 
+    justify-self: end; 
+    align-items: flex-end; 
   }
   .roadmap-item-title,
   .curriculum-item-desc {
-  margin: 0; 
-  padding: 0;
-  .roadmap-item-title {
-    position: relative;
-    padding-bottom: 10px;
+    text-align:center; 
   }
-
-  .roadmap-item-title::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100px; 
-  } */
-
-/* .curriculum-roadmap{
-  position:relative;
-  max-width:1272px;
-  width:100%;
-  margin:0 auto;
-  padding:0 50px;
-  box-sizing:border-box;
-}
-.curriculum-item-week {
-  font-size: 1rem;
-  display: block;
-  line-height: 19.1px;
-  margin-top: 20px;
-}
-.roadmap-line {
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  left: 0;
-  background: var(--e-s-t_blue);
-  top: 110px;
-}
-.roadmap-items {
-  display: flex;
-  justify-content: space-between;
-  position:relative;
-  z-index:2;
-  width:100%;
-  margin:90px 0 96px 0;
-}
-.roadmap-item {
-  width: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-.roadmap-item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: calc(243px / 2);
-  width: 10px;
-  height: 10px;
-  background-color: var(--e-s-t_blue);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-.roadmap-item-title,
-.curriculum-item-desc {
-  width: max-content;
-  text-align: center;
-  white-space: nowrap; 
-}
-.roadmap-item-title::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: var(--liner);
-  width: 163px;
-  margin: 10px auto;
-}
-.roadmap-item-title .curriculum-item-week {
-  margin-bottom: 10px;
-}
-.roadmap-item:first-child .roadmap-item-title::after,
-.roadmap-item:last-child .roadmap-item-title::after {
-  width: 140px;
-  margin: 10px auto;
-}
-.roadmap-dot {
-  width: 40px;
-  height: 40px;
-  background-color: #d9e5ff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 243px;
-  position: relative;
-  z-index: 3;
-  box-shadow: 0 0 20px rgba(0, 117, 255, 0.4);
-}
-.roadmap-dot::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: var(--e-s-t_blue);
-  filter: blur(2px);
-  border-radius: 50%;
-}
-#curriculum .curriculum-btn{
-  width:120px;
-  line-height:34px;
-  font-size:var(--text-p);
-  color:var(--e-s-t_blue);
-  background-color:var(--medium--blue);
-  text-align:center;
-  border-radius:5px;
-  transition:.3s;
-  cursor:pointer;
-}
-#curriculum .curriculum.-tn:hover{
-  background-color:var(--e-s-t_blue);
-  color:var(--white);
-} */
-
-/* @media (max-width: 1024px) {
-  .roadmap-items {
-    height: 300px; 
-    display: flex;
-    align-items: center; 
+  .roadmap-item:nth-child(even) {
+    transform: translateY(calc(-50% + 20px));
+    flex-direction: column-reverse;
   }
-
-  .roadmap-item {
-    position: relative;
-    width: 40px;
+  .roadmap-item:nth-child(odd) {
+    transform: translateY(calc(50% - 20px)); 
   }
   .roadmap-dot {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+    margin: 0; 
+    flex-shrink: 0;
   }
-  .roadmap-item:nth-child(odd) .roadmap-item-title {
-    margin-bottom: 80px;
+  .roadmap-item:first-child {
+    grid-column: 1;
+    justify-self: center; 
+    align-items: center;
+    padding-left: 20px; 
   }
-  .roadmap-item:nth-child(even) .roadmap-item-title {
-    margin-top: 80px; 
+  .roadmap-item:last-child {
+    grid-column: 9;
+    justify-self: center; 
+    align-items: center;
+    padding-right: 20px; 
+  }
+  .roadmap-item:nth-child(even) .roadmap-item-title::after{
+    margin-top:10px;
+  }
+  .roadmap-item:nth-child(even) .roadmap-item-title{
+    flex-direction:column-reverse;
+  }
+  .roadmap-item:nth-child(2),
+  .roadmap-item:nth-child(3),
+  .roadmap-item:nth-child(4) {
+    justify-self: center;
+    align-items: center;
+  }
+  .roadmap-item-title,
+  .curriculum-item-desc {
+    overflow:hidden;
+  }
+}
+@media (max-width:768px){
+  .roadmap-dots-group{
+    display:none;
+  }
+  .roadmap-item,
+  .roadmap-item:nth-child(odd),
+  .roadmap-item:nth-child(even),
+  .roadmap-item:first-child,
+  .roadmap-item:last-child{
+    transform:none;
+    width:fit-content;
+    padding:0;
+  }
+  .curriculum-roadmap{
+    position:relative;
+    width:100%;
   }
   .roadmap-line{
-    top:240px;
+    position:absolute;
+    left:20px;     
+    top:0;    
+    bottom:0;  
+    width:1px;
+    transform:translateY(20px);
+    height:calc(100% - 40px);
+    background-color:var(--e-s-t_blue);
   }
-  .roadmap-item:not(:last-child)::after {
-  top: 50%; 
-  left: calc(243px / 2); 
-  transform: translate(-50%, -50%);
+  .roadmap-items{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    position:relative;
   }
-} */
+  .roadmap-item{
+    display:grid;
+    grid-template-columns:40px auto;
+    row-gap:8px;
+    column-gap:30px;
+    align-items:center; 
+    position:relative;
+    z-index:1;
+  }
+  .roadmap-item:nth-child(even) .roadmap-item-title{
+    flex-direction:column;
+  }
+  .roadmap-dot{
+    grid-column:1;
+    width:40px;
+    height:40px;
+    margin:0;
+    grid-row:1/3;
+    justify-self:center;
+    align-self:center;
+    flex-shrink:0;
+  }
+  .roadmap-item-title{
+    grid-column:2;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin:0;
+  }
+  .roadmap-item-title::after{
+    content:'';
+    display:block;
+    width:100%;
+    max-width:140px;
+    height:1px;
+    margin-top:8px;
+    background-color:var(--liner);
+  }
+  .curriculum-item-desc{
+    grid-column:2;
+    margin:0;
+    text-align:center;
+  }
+}
+/* 베너 */
+.banner{
+  width:100%;
+  min-height:100%;
+  padding:149px 0;
+  background:url("../images/banner.jpg") no-repeat center / cover;
+  box-sizing:border-box;
+}
+.banner-content{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+.banner .container{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+.banner .btn-cta{
+  align-self:flex-end;
+}
+.banner .text-title-xl{
+  text-align:left;
+}
+.banner h2 span{
+  display:block;
+}
+@media (max-width:1024px){
+  section.banner{
+    padding:60px 30px;
+  }
+}
+@media (max-width:768px){
+  section.banner{
+    padding:40px 20px;
+  }
+  .banner-content{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+  }
+  .banner .btn-cta{
+    align-self:center;
+  }
+  .banner .text-title-xl{
+    text-align:center;
+  }
+}
+/* 푸터 */
+footer{
+  padding:56px 0;
+  color:var(--medium-gray2);;
+  font-size:14px;
+  line-height:27px;
+}
+.footer-logo{
+  line-height:0;
+}
+.footer-info address{
+  display:flex;
+  flex-direction:column;
+}
+.footer-md{
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-top:60px;
+}
+.sns-links{
+  display:flex;
+  gap:10px;
+  margin-top:4px;
+}
+.sns-links a{
+  background-color:#a4a4a4;
+  border-radius:50%;
+  width:36px;
+  height:36px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-policy{
+  border-top:1px solid var(--liner);
+  margin-top:20px;
+  padding-top:20px;
+}
+.policy-links{
+  display:flex;
+}
+.policy-links a{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+.policy-links a::after{
+  content:'';
+  width:1px;
+  height:14px;
+  background-color:var(--liner);
+  margin-right:5px;
+}
+.policy-links a:last-child::after{
+  display:none;
+}
+@media (max-width:1024px){
+  footer{
+    padding:60px 30px;
+  }
+}
+@media (max-width:768px){
+  footer{
+    padding:40px 20px;
+  }
+  footer .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+  }
+  .footer-md{
+    flex-direction:column-reverse;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+  }
+  .policy-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .footer-policy{
+    width:100%;
+    margin-top:0;
+  }
+  .policy-links a::after {
+    display: none;
+  }
+}
 
 /* 컨텐츠 hero 섹션 */
 .camp-story .container {
@@ -676,9 +955,8 @@ header .btn-md {
   flex-direction: column;
 }
 
-
 .hero{
-    background-image: url(/img/jeju_orumi_background.jpg);
+    background-image: url(/images/jeju_orumi_background.jpg);
     height: 720px;
     background-repeat:no-repeat;
     background-size: cover;
@@ -722,9 +1000,8 @@ header .btn-md {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
 }
-
+/* 
 .camp-story .header{
     width: 1272px;
     display: flex;
@@ -733,20 +1010,60 @@ header .btn-md {
     margin-bottom: 60px;
     align-items: top left;
     gap: 10px;
-}
+} */
 
 .camp-story-layout{
     display: flex;
     justify-content: center;
+    margin-top: 60px;
+}
+
+@media (max-width: 1296px) {
+  .camp-story .intro-header{
+    display: grid;
+    justify-content: left;
+    padding-left: 150px;
+  }
+   
+  .camp-story-layout {
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .camp-story-layout .camp-story-sidelist{
+    margin-top: 24px;
+    flex-direction: row;
+    gap:28px;
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  .camp-story .intro-header{
+    padding: 0;
+  }
+  .camp-story-layout {
+    max-width: 964px;
+  }
+}
+
+@media (max-width: 768px) {
+  .camp-story-layout{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .camp-story .main-card{
+  /* width: 948px; */
     padding-right: 27px;
 }
+
 
 .camp-story .card-text{
   background-color: var(--light--gray);
   border-radius: 0 0 10px 10px;
+  width: 948px;
 }
 
 .card-text .main-card-title{
@@ -768,6 +1085,15 @@ header .btn-md {
   color: var(--e-s-t_blue);
 }
 
+[data-theme="dark"] .main-card .icon{
+  /* padding: 7px 10px 14px 10px; */
+  padding-right: 10px;
+  padding-bottom: 7px;
+  font-size: 24px;
+  color:var(--medium--blue);
+}
+
+
 .main-card img{
     border-radius: 10px 10px 0 0;
 }
@@ -783,6 +1109,7 @@ header .btn-md {
     flex-direction: column;
     gap: 24px;
 }
+
 .small-card-title{
     display: flex;
     justify-content: space-between;  
@@ -798,5 +1125,61 @@ header .btn-md {
     border-radius: 10px 10px 0 0;
 }
 
+[data-theme="dark"] .hero-content-subtitle{
+  color: #818CF8;
+}
+[data-theme="dark"] .camp-story .intro-header h2{
+  color: #F8FAFC;
+}
+[data-theme="dark"] .camp-story .intro-header p{
+  color: #CBD5E1;
+}
+[data-theme="dark"] .camp-story .card-text{
+  background-color: var(--card-bg);
+  color: #F8FAFC;
+}
+[data-theme="dark"] .camp-story .main-card-subtitle{
+  color: #94A3B8;
+}
+
+[data-theme="dark"] .camp-story-sidelist .small-card-title{
+  background-color: var(--card-bg);
+  color: var(--white);
+}
+[data-theme="dark"] .camp-story-sidelist .icon{
+  color: var(--medium--blue);
+}
+
+
 
 /* 이스트 캠프 이야기 섹션 */
+@media (max-width: 768px) {
+  .hero-title-box .text-title-xl{
+    font-size: 38px;
+  }
+  .hero-title-desc {
+    font-size: 16px;
+  }
+}
+/* hero */
+
+/*  최이리나 => 박소호 수정 하단cta */
+/* .cta-banner{
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/cta-banner.jpg);
+  background-repeat: no-repeat;
+  background-position:center top;
+  background-size: cover;
+  z-index:1;
+}
+
+.cta-banner .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+/*  최이리나 => 박소호 수정 하단cta */

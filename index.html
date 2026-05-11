@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>EST Camp</title>
-      <link
+     <meta name="description" content="이스트캠프 부트캠프 - AI, 프론트엔드, 데이터분석 과정"> 
+     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
@@ -12,35 +13,37 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
-  <body>
+  <body data-theme="dark">
+  <!-- <body> -->
   <!-- 헤더 -->
   <!-- 강채희 -->
-    <header class="main-header">
+    <header class="main-header bg-muted">
       <div class="container">
         <h1 class="logo">
           <a href="index.html">
-            <img src="./images/Logo.svg" alt="">
+            <img src="./images/Logo.svg" class="logo-light" alt="EST CAMP LOGO">
+            <img src="./images/logo-darkmode-header.svg" class="logo-dark" alt="EST CAMP LOGO">
             <span class="hidden">EST CAMP</span>
           </a>
         </h1>
-        <nav class="nav">
+        <nav aria-label="주요 메뉴">
           <ul>
-            <li><a href="#">인공지능사관학교</a></li>
-            <li><a href="#">오르미 캠프</a></li>
-            <li><a href="#">모집과정</a></li>
+            <li><a href="#" class="nav-text">인공지능사관학교</a></li>
+            <li><a href="#" class="nav-text">오르미 캠프</a></li>
+            <li><a href="#" class="nav-text">모집과정</a></li>
           </ul>
         </nav>
-        <a href="#" class="btn btn-primary btn-md">지원하기</a>
+        <a href="#" class="btn btn-strong btn-text btn-md">지원하기</a>
         <!-- 토글 버튼 -->
-        <button type="button" class="btn-menu">
-          <span class="toggle-line"></span>
-          <span class="hidden">전체 메뉴</span>
+        <button type="button" class="btn-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="toggle-line" aria-hidden="true"></span>
+          <span class="hidden">전체 메뉴 열기</span>
         </button>
       </div>
     </header>
-  <!-- //강채희 -->
-
-    <!-- 박소호 -->
+    <!-- //강채희 -->
+<main>
+  <!-- 박소호 -->
     <!-- hero 섹션 -->
     <section class="title-hero">
       <div class="container">
@@ -58,7 +61,7 @@
             <span class="material-icons">keyboard_arrow_right</span>
           </a>
 
-          <a class="Button-Big right-btn" href="#">과정 탐색하기
+          <a class="Button-Big  right-btn" href="#">과정 탐색하기
             <span class="material-icons">keyboard_arrow_right</span>
           </a>
         </div>
@@ -69,14 +72,14 @@
     <section class="online">
       <div class="container">
         <!-- 온라인 헤더-->
-      <header class="online-intro">
+      <header class="intro-header">
         <h2 class="text-h2-lg">이스트소프트 부트캠프</h2>
         <ul class="online-category">
           <li class="text-p on_category">
             <button class="active">온라인과정</button>
           </li>
           <li class="text-p on-off_category">
-            <button>온/오프라인과정</button>
+            <button class="disabled">온/오프라인과정</button>
           </li>
         </ul>
       </header>
@@ -96,9 +99,7 @@
           <li class="item1">
             <a href="#">
               <!-- 이미지 -->
-              <figure>
                 <img src="images/front-img.jpg" alt="온라인과정 이미지">
-              </figure>
               <!-- 텍스트 박스 -->
               <div class="text-box">
                 <h3 class="text-h3-md">프론트엔드 개발 14기</h3>
@@ -107,35 +108,31 @@
             </a>
           </li>
 
-          <li class="item2">
-            <a href="">
-              <!-- 이미지 -->
-              <figure>
-                <img src="images/AI-img.jpg" alt="온라인과정 이미지">
-              </figure>
-              <!-- 텍스트 박스 -->
-              <div class="text-box">
-                <h3 class="text-h3-md">AI 퀀트 4기</h3>
-                <p class="text-p">모집기간. 2026.05.27~10.23</p>
-              </div>
-            </a>
-          </li>
+            <li class="item2">
+              <a href="">
+                <!-- 이미지 -->
+                  <img src="images/AI-img.jpg" alt="온라인과정 이미지" />
+                <!-- 텍스트 박스 -->
+                <div class="text-box">
+                  <h3 class="text-h3-md">AI 퀀트 4기</h3>
+                  <p class="text-p">모집기간. 2026.05.27~10.23</p>
+                </div>
+              </a>
+            </li>
 
-          <li class="item3">
-            <a href="">
-              <!-- 이미지 -->
-              <figure>
-                <img src="images/IOS-img.jpg" alt="온라인과정 이미지">
-              </figure>
-              <!-- 텍스트 박스 -->
-              <div class="text-box">
-                <h3 class="text-h3-md">IOS앱 개발 7기</h3>
-                <p class="text-p">모집기간. 2026.03.25~05.18</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
+            <li class="item3">
+              <a href="">
+                <!-- 이미지 -->
+                  <img src="images/IOS-img.jpg" alt="온라인과정 이미지" />
+                <!-- 텍스트 박스 -->
+                <div class="text-box">
+                  <h3 class="text-h3-md">IOS앱 개발 7기</h3>
+                  <p class="text-p">모집기간. 2026.03.25~05.18</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
     </section>
 
@@ -157,40 +154,40 @@
 <!-- //컨텐츠 hero 섹션 -->
  
 <!-- 이스트 캠프 이야기 섹션 -->
-<section class="camp-story">
+<section class="camp-story bg-base">
   <div class="container">
-    <div class="header">
+    <div class="intro-header">
       <h2>이스트 캠프 콘텐츠</h2>
       <p>이스트 캠프의 생생한 이야기</p>
     </div>
     <div class="camp-story-layout">
-      <article class="main-card">
-        <img src="img/big-card.jpg" alt="메인카드 사진">
+      <div class="main-card">
+        <img src="images/big-card.jpg" alt="메인카드 사진">
         <div class="card-text">
           <h3 class="main-card-title">부트캠프 만으로 진짜 취업할 수 있을까?</h3>
           <p class="main-card-subtitle">청년 고용률의 내리막...  현실은 잔혹하지만 돌파구는 있습니다.</p>
           <p class="icon">arrow_forward</p>
         </div>
-      </article>
+       </div> 
 
       <div class="camp-story-sidelist">
-        <article class="small-card">
-          <img src="img/small-card1.jpg" alt="카드 리스트 사진1">
+        <div class="small-card">
+          <img src="images/small-card1.jpg" alt="카드 리스트 사진1">
           <p class="small-card-title">
             <span>
               우리는 조금 느렸지만, 분명 다릅니다 
             </span>
             <span class="icon">keyboard_arrow_right</span>
           </p> 
-        </article>
-        <article class="small-card">
-          <img src="img/small-card2.jpg" alt="카드 리스트 사진2">
+        </div>
+        <div class="small-card">
+          <img src="images/small-card2.jpg" alt="카드 리스트 사진2">
           <p class="small-card-title">“결정적 차이? AI 시대 맞춤 교육이... <span class="icon">keyboard_arrow_right</span></p>
-        </article>
-        <article class="small-card">
-          <img src="img/small-card3.jpg" alt="카드 리스트 사진3">
+        </div>
+        <div class="small-card">
+          <img src="images/small-card3.jpg" alt="카드 리스트 사진3">
           <p class="small-card-title">‘저희를 믿고 한걸음 내딛어 주세요’  <span class="icon">keyboard_arrow_right</span></p>
-        </article>
+        </div>
       </div>
     </div>
   </div>
@@ -199,147 +196,130 @@
 <!-- //송주윤 -->
 <!-- 과정 찾기 섹션 -->
   <!-- 강채희 -->  
-  <section id="course" class="bg-surface">
+  <section id="course" class="bg-muted">
     <div class="container">
       <div class="course-intro">
-          <h2 class="course-title">
-            <span class="title-line">나에게 맞는</span>
-            <span class="primary-color">부트캠프 과정</span> 찾기
+          <h2 class="course-title text-base text-h2-lg section-title">
+            <span class="title-line">나에게 맞는</span> 
+            <span class="text-point">부트캠프 과정</span> 찾기
           </h2>
-          <a href="#" class="btn btn-primary btn-md">과정 더보기</a>
-        </div>
-        <div class="course-grid">
-          <article class="course-card">
-            <div class="course-card-info">
-              <h3 class="course-card-title">
-                <span class="title-line">입문자</span>
-                <span class="primary-color">기초</span>다지기
-              </h3>
-              <p class="course-card-desc">프로그래밍 기초</p>
-            </div>
-            <div class="course-card-image">
-              <img
-                src="./images/course.png"
-                alt="입문자 과정을 안내하는 알약 캐릭터"
-              />
-            </div>
-          </article>
-          <article class="course-card">
-            <div class="course-card-info">
-              <h3 class="course-card-title">
-                <span class="title-line">프론트엔드</span>
-                <span class="primary-color">핵심 인재</span>양성
-              </h3>
-              <p class="course-card-desc">React, TypeScript 마스터</p>
-            </div>
-            <div class="course-card-image">
-              <img
-                src="./images/course.png"
-                alt="프론트엔드 과정을 알약 캐릭터"
-              />
-            </div>
-          </article>
-          <article class="course-card">
-            <div class="course-card-info">
-              <h3 class="course-card-title">
-                <span class="title-line">데이터 분석</span>
-                <span class="primary-color">AI 트렌드</span> 리딩
-              </h3>
-              <p class="course-card-desc">Python, 데이터 시각화</p>
-            </div>
-            <div class="course-card-image">
-              <img
-                src="./images/course.png"
-                alt="데이터분석 과정을 알약 캐릭터"
-              />
-            </div>
-          </article>
-          <article class="course-card">
-            <div class="course-card-info">
-              <h3 class="course-card-title">
-                <span class="title-line">가디언즈</span>
-                <span class="primary-color">인프라보안</span>
-              </h3>
-              <p class="course-card-desc">보안 관제, 침해 사고 대응</p>
-            </div>
-            <div class="course-card-image">
-              <img
-                src="./images/course.png"
-                alt="인프라보안 과정을 안내하는 알약 캐릭터"
-              />
-            </div>
-          </article>
-        </div>
+          <a href="#" class="btn btn-strong btn-text btn-md" aria-label="부트캠프 과정 전체 보기">과정 더보기</a>
       </div>
-    </section>
-    <!-- //강채희 -->
+      <div class="course-grid">
+        <article class="course-card card-bg">
+            <div class="course-card-info">
+                <h3 class="course-card-title text-base text-h3-md"><span class="title-line">입문자</span>
+                  <span class="text-point">기초</span>다지기</h3>
+                <p class="course-card-desc text-muted">프로그래밍 기초</p>
+            </div>
+            <div class="course-card-image">
+              <img src="./images/course.png" alt="입문자 과정을 안내하는 알약 캐릭터" />
+            </div>
+        </article>
+        <article class="course-card card-bg">
+            <div class="course-card-info">
+                <h3 class="course-card-title text-base text-h3-md">
+                  <span class="title-line">프론트엔드</span>
+                  <span class="text-point">핵심 인재</span>양성</h3>
+                <p class="course-card-desc text-muted">React, TypeScript 마스터</p>
+            </div>
+            <div class="course-card-image">
+              <img src="./images/course.png" alt="프론트엔드 과정을 알약 캐릭터" />
+            </div>
+        </article>
+        <article class="course-card card-bg">
+            <div class="course-card-info">
+                <h3 class="course-card-title text-base text-h3-md">
+                  <span class="title-line">데이터 분석</span>
+                  <span class="text-point">AI 트렌드</span> 리딩</h3>
+                <p class="course-card-desc text-muted">Python, 데이터 시각화</p>
+            </div>
+            <div class="course-card-image">
+              <img src="./images/course.png" alt="데이터분석 과정을 알약 캐릭터" />
+            </div>
+        </article>
+        <article class="course-card card-bg">
+            <div class="course-card-info">
+                <h3 class="course-card-title text-base text-h3-md">
+                  <span class="title-line">가디언즈</span> 
+                  <span class="text-point">인프라보안</span></h3>
+                <p class="course-card-desc text-muted">보안 관제, 침해 사고 대응</p>
+            </div>
+            <div class="course-card-image">
+              <img src="./images/course.png" alt="인프라보안 과정을 안내하는 알약 캐릭터" />
+            </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- //강채희 -->  
   <!-- 커리큘럼 로드맵 -->
   <!-- 강채희 -->  
-  <section id="curriculum">
+  <section id="curriculum" class="bg-base">
     <div class="container">
       <div class="section-header">
-        <span class="section-label primary-color">CURRICULUM</span>
-        <h2 class="section-title">커리큘럼 로드맵</h2>
+        <span class="section-label" aria-hidden="true">CURRICULUM</span>
+        <h2 class="section-title text-base text-h2-lg">커리큘럼 로드맵</h2>
       </div>
       <div class="curriculum-roadmap">
-        <div class="roadmap-line"></div>
-        <div class="roadmap-dots-group">
+        <div class="roadmap-line" aria-hidden="true"></div>
+        <div class="roadmap-dots-group" aria-hidden="true">
           <span class="sub-dot"></span>
           <span class="sub-dot"></span>
           <span class="sub-dot"></span>
           <span class="sub-dot"></span>
         </div>
-        <div class="roadmap-items">
-          <article class="roadmap-item">
+        <ol class="roadmap-items">
+          <li class="roadmap-item">
             <!-- 각 아이템 위에 놓일 동그라미 -->
-            <span class="roadmap-dot"></span>
-            <h3 class="roadmap-item-title">
+            <span class="roadmap-dot" aria-hidden="true"></span>
+            <h3 class="roadmap-item-title text-base text-h3-md">
               <span class="curriculum-item-week">1-4주차</span>
               UI 레이아웃
             </h3>
             <p class="curriculum-item-desc">HTML/CSS, Figma
               <br>AI 활용 UI 설계</p>
-          </article>
-          <article class="roadmap-item">
-            <span class="roadmap-dot"></span>
-            <h3 class="roadmap-item-title">
+          </li>
+          <li class="roadmap-item">
+            <span class="roadmap-dot" aria-hidden="true"></span>
+            <h3 class="roadmap-item-title text-base text-h3-md">
               <span class="curriculum-item-week">5-9주차</span>
-              JS & 프로그래밍
+              JS &amp; 프로그래밍
             </h3>
             <p class="curriculum-item-desc">JavaScript, 
               <br>알고리즘</p>
-          </article>
-          <article class="roadmap-item">
-            <span class="roadmap-dot"></span>
-            <h3 class="roadmap-item-title">
+          </li>
+          <li class="roadmap-item">
+            <span class="roadmap-dot" aria-hidden="true"></span>
+            <h3 class="roadmap-item-title text-base text-h3-md">
               <span class="curriculum-item-week">10-13주차</span>
               React 앱 개발
             </h3>
             <p class="curriculum-item-desc">리액트, 
               <br>TypeScript</p>
-          </article>
-          <article class="roadmap-item">
-            <span class="roadmap-dot"></span>
-            <h3 class="roadmap-item-title">
+          </li>
+          <li class="roadmap-item">
+            <span class="roadmap-dot" aria-hidden="true"></span>
+            <h3 class="roadmap-item-title text-base text-h3-md">
               <span class="curriculum-item-week">14-17주차</span>
               백엔드 기초
             </h3>
             <p class="curriculum-item-desc">성능 최적화, 
               <br>Firebase/Supabase</p>
-          </article>
-          <article class="roadmap-item">
-            <span class="roadmap-dot"></span>
-            <h3 class="roadmap-item-title">
+          </li>
+          <li class="roadmap-item">
+            <span class="roadmap-dot" aria-hidden="true"></span>
+            <h3 class="roadmap-item-title text-base text-h3-md">
               <span class="curriculum-item-week">18주차</span>
               최종 프로젝트
             </h3>
             <p class="curriculum-item-desc">최종 서비스 런칭 및 
               <br>현직자 취업 특강</p>
-          </article>
-        </div>
+          </li>
+        </ol>
       </div>
-      <div class="curriculum-btn">
-        <a href="#" class="btn btn-secondary">커리큘럼 더보기</a>
+      <div class=" curriculum-btn">
+        <a href="#" class="btn">커리큘럼 더보기</a>
       </div>
     </div>
   </section>
@@ -376,27 +356,28 @@
 
     <section class="online">
       <div class="container">
-        <header class="online-intro">
-          <p>review</p>
-          <h2>수강생후기</h2>
+        <header class="section-header reviewtitle">
+          <span class="section-label primary-color">review</span>
+          <h2>수강생 후기</h2>
         </header>
         <div class="slides_nav">
           <button class="slide-btn prev">
-            <span class="material-icons">chevron_left</span>
+            <span class="material-icons">keyboard_arrow_left</span>
           </button>
-          <button class="slide-btn-next">
-            <span class="material-icons">chevron_right</span>
+          <button class="slide-btn next">
+            <span class="material-icons">keyboard_arrow_right</span>
           </button>
         </div>
-        <section class="review-content">
-          <ul class="list">
+        <section class="online-content">
+          <ul class="review-list">
             <li class="item1">
               <a href="#">
                 <figure>
-                  <img src="img/student1.png" alt="취업 성공한 인물 사진" />
+                  <img src="images/student1.png" alt="취업 성공한 인물 사진" />
                 </figure>
-                <div class="text-box">
-                  <h3>백엔드개발자 부트캠프로 비전공자 취뽀성공</h3>
+                <div class="review-text">
+                  <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                  <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
                   <p>O**-수강생-백엔드</p>
                 </div>
               </a>
@@ -404,10 +385,11 @@
             <li class="item1">
               <a href="#">
                 <figure>
-                  <img src="img/student2.png" alt="취업 성공한 인물 사진" />
+                  <img src="images/student2.png" alt="취업 성공한 인물 사진" />
                 </figure>
-                <div class="text-box">
-                  <h3>백엔드개발자 부트캠프로 비전공자 취뽀성공</h3>
+                <div class="review-text">
+                  <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                  <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
                   <p>O**-수강생-백엔드</p>
                 </div>
               </a>
@@ -415,10 +397,11 @@
             <li class="item1">
               <a href="#">
                 <figure>
-                  <img src="img/student3.png" alt="취업 성공한 인물 사진" />
+                  <img src="images/student3.png" alt="취업 성공한 인물 사진" />
                 </figure>
-                <div class="text-box">
-                  <h3>백엔드개발자 부트캠프로 비전공자 취뽀성공</h3>
+                <div class="review-text">
+                  <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                  <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
                   <p>O**-수강생-백엔드</p>
                 </div>
               </a>
@@ -426,68 +409,129 @@
             <li class="item1">
               <a href="#">
                 <figure>
-                  <img src="img/student4.png" alt="취업 성공한 인물 사진" />
+                  <img src="images/student4.png" alt="취업 성공한 인물 사진" />
                 </figure>
-                <div class="text-box">
-                  <h3>백엔드개발자 부트캠프로 비전공자 취뽀성공</h3>
+                <div class="review-text">
+                  <h3 class="text-h3-md-s">백엔드개발자 부트캠프로</h3>
+                  <h3 class="text-h3-md-s">비전공자 취뽀성공</h3>
                   <p>O**-수강생-백엔드</p>
                 </div>
               </a>
             </li>
           </ul>
         </section>
-      </div>    
+      </div>
     </section>
 
     <!-- FQA -->
-    <section>
-      <div class="container reviewtitle">
-        <p>faq</p>
-        <h2>자주 묻는 질문</h2>
+    <section class="online">
+      <div class="container">
+        <header class="section-header reviewtitle">
+          <span class="section-label primary-color">faq</span>
+          <h2>자주 묻는 질문</h2>
+        </header>
+        <div class="faq_more">
+          <a href="">더보기</a>
+        </div>
+        <ul class="faq_list">
+          <li class="faq_item">
+            <p class="fqa_question">비전공자도 수강이 가능한가요?</p>
+            <div class="faq_answer"><p></p></div>
+          </li>
+          <li class="faq_item">
+            <p class="fqa_question">훈련 장려금과 숙식지원은 어떻게 이루어지나요?</p>
+            <div class="faq_answer"><p></p></div>
+          </li>
+          <li class="faq_item">
+            <p class="fqa_question">9주간의 교육 커리큘럼은 어떻게 구성되나요?</p>
+            <div class="faq_answer"><p></p></div>
+          </li>
+          <li class="faq_item">
+            <p class="fqa_question">팀 프로젝트는 어떤식으로 진행되나요?</p>
+            <div><p class="faq_answer"></p></div>
+          </li>
+          <li class="faq_item">
+            <p class="">수업 후 취업지원 혜택은 무엇인가요?</p>
+            <div class="faq_answer"><p></p></div>
+          </li>
+        </ul>
       </div>
-      <div class="container more">
-        <a href="">더보기</a>
-      </div>
-      <ul class="container">
-        <li class="faq_list">
-          <p>비전공자도 수강이 가능한가요?</p>
-          <div class="hidden"><p></p></div>
-        </li>
-
-        <li class="faq_list">
-          <p>훈련 장려금과 숙식지원은 어떻게 이루어지나요?</p>
-          <div class="hidden"><p></p></div>
-        </li>
-        <li class="faq_list">
-          <p>9주간의 교육 커리큘럼은 어떻게 구성되나요?</p>
-          <div class="hidden"><p>..</p></div>
-        </li>
-        <li class="faq_list">
-          <p>팀 프로젝트는 어떤식으로 진행되나요?</p>
-          <div><p class="hidden"></p></div>
-        </li>
-        <li class="faq_list">
-          <p>수업 후 취업지원 혜택은 무엇인가요?</p>
-          <div class="hidden"><p></p></div>
-        </li>
-      </ul>
     </section>
 
     <!-- //조영빈 -->
     <!-- 최이리나 -->
     <!-- blue block -->
-    <div class="banner">
+        <!-- blue block -->
+    <section class="banner section-header" aria-labelledby="banner title">
+      <div class="container">
+        <div class="banner-content">
+          <h2 class="text-title-xl text-base">2026 인공지능사관학교
+            <span>7기 교육생 모집</span>
+          </h2>
+          <a href="#" class="btn-cta btn-strong" aria-label="2026 인공지능사관학교 7기 모집 자세히 보기">보러가기</a>
+        </div>
+      </div>
+    </section>
+</main>
+    <!-- //최이리나 -->
+     <footer aria-label="사이트 하단 정보" class="bg-muted">
+        <div class="container">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="이스트캠프 메인페이지로 이동">
+              <img src="images/logo_footer.svg" class="logo-light" alt="ESTCAMP LOGO">
+              <img src="images/logo_darkmode-footer.svg" class="logo-dark" alt="ESTCAMP LOGO">
+              <span class="hidden">이스트캠프</span>
+            </a>
+          </div>
+          <div class="footer-md">
+            <div class="footer-info">
+              <address>
+                <p>서울시 서초구 반포대로 3, 이스트빌딩</p>
+                <p><a href="tel:01050484620" aria-label="이스트캠프 고객센터 전화 연결">문의처 : 010-5048-4620</a> (평일 오전 10시~오후 5시)</p>
+              </address>
+              <p class="copyright">&copy; 2026 ESTfamily All Rights Reserved. </p>
+            </div>
+            <div class="sns-links" aria-label="소셜 미디어 링크">
+              <a href="#" aria-label="이스트캠프 인스타그램">
+                <img src="./images/Instagram.svg" alt="인스타그램">
+                <span class="hidden">인스타그램</span>
+              </a>
+              <a href="#" aria-label="이스트캠프 카카오톡 채널">
+                <img src="./images/Kakaotalk.svg" alt="카카오톡">
+                <span class="hidden">카카오톡</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-policy">
+            <nav class="policy-links" aria-label="약관 및 정책">
+              <a href="#" class="privacy">개인정보처리방침</a>
+              <a href="#">ESTfamily</a>
+              <a href="mailto:contact@estfamily.com">문의메일</a>
+            </nav>
+          </div>
+        </div>
+     </footer>
+  </body>
+</html>
+
+
+<!-- <section class="banner section-header" aria-labelledby="banner title">
+      <div class="container">
+        <div class="banner-content">
+          <h2 class="text-title-xl">2026 인공지능사관학교
+            <span>7기 교육생 모집
+          </h2>
+          <a href="#" class="btn-cta btn-primary aria-label=2026 인공지능사관학교 7기 모집 자세히 보기">보러가기</a>
+    <!-- <div class="banner">
       <div class="banner-content">
         <p>
           2026 인공지능사관학교<br />
           7기 교육생 모집
         </p>
-
         <button>보러가기</button>
       </div>
     </div>
 
-    <!-- 밑블럭 -->
     <div class="content">
       <img src="logo.png" alt="EST camp logo" class="logo-img" />
 
@@ -520,14 +564,42 @@
         <div class="card">
           <h2>AI 프로젝트</h2>
           <p>AI 활용 실전 프로젝트</p>
+        </div> 
+      </div>
+    </section>
+     <footer aria-label="사이트 하단 정보">
+        <div class="container">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="이스트캠프 메인페이지로 이동">
+              <img src="images/Logo.svg" alt="ESTCAMP LOGO">
+              <span class="hidden">이스트캠프</span>
+            </a>
+          </div>
+          <div class="footer-md">
+            <div class="footer-info">
+              <address>
+                <p>서울시 서초구 반포대로 3, 이스트빌딩</p>
+                <p><a href="tel:01050484620" aria-label="이스트캠프 고객센터 전화 연결">문의처 : 010-5048-4620</a> (평일 오전 10시~오후 5시)</p>
+              </address>
+              <p class="copyright">&copy; 2026 ESTfamily All Rights Reserved. </p>
+            </div>
+            <div class="sns-links" aria-label="소셜 미디어 링크">
+              <a href="#" aria-label="이스트캠프 인스타그램">
+                <img src="./images/Instagram.svg" alt="인스타그램">
+                <span class="hidden">인스타그램</span>
+              </a>
+              <a href="#" aria-label="이스트캠프 카카오톡 채널">
+                <img src="./images/Kakaotalk.svg" alt="카카오톡">
+                <span class="hidden">카카오톡</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-policy">
+            <nav class="policy-links" aria-label="약관 및 정책">
+              <a href="#" class="privacy">개인정보처리방침</a>
+              <a href="#">ESTfamily</a>
+              <a href="mailto:contact@estfamily.com">문의메일</a>
+            </nav>
+          </div>
         </div>
-      </div>
-      <div class="footer-text">
-        서울시 서초구 반포대로 3, 이스트빌딩 | 문의처 : 010-5084-4620 (평일 오전 10시~오후 5시) | ©
-        2026 ESTTfamily All Rights Reserved.
-      </div>
-    </div>
-
-    <!-- //최이리나 -->
-  </body>
-</html>
+     </footer>  -->
