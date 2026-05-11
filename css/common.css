@@ -552,23 +552,6 @@ p {
   color: var(--e-s-t_blue);
 }
 
-.btn-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.5);
-  color: var(--white);
-  border: 1px solid var(--white);
-  border-radius: 50px;
-  font-size: var(--button--big);
-  transition: 0.3s;
-}
-.btn-cta:hover {
-  border: 1px solid rgba(0, 0, 0, 0);
-  background-color: var(--e-s-t_blue);
-  color: var(--white);
-}
-
 .Button-Big{
   width: 174px;
   height: 54px;
