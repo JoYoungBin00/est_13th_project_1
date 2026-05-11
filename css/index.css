@@ -126,7 +126,7 @@
 /* 배너 이미지 */
 .title-hero {
   height: 800px;
-  background-image: url(./images/hero-banner.jpg);
+  background-image: url(../images/hero-banner.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
