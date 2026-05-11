@@ -181,6 +181,18 @@
   gap: 44px;
 }
 
+/* .title-button-box .Button-Big {
+  width: 174px;
+  height: 54px;
+  font-size: var(--button--big);
+  font-family: 'Pretendard';
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border-radius: 5px;
+} */
 /* button style */
 .title-button-box .left-btn {
   background: var(--e-s-t_blue);
@@ -218,7 +230,6 @@
 /* 헤더 */
 .main-header {
   position: sticky;
-  background-color: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   top: 0;
   z-index: 100;
@@ -284,7 +295,7 @@ header .btn-md {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #333;
+    background-color: var(--liner);
     transition: 0.3s;
   }
   .toggle-line {
@@ -321,6 +332,29 @@ header .btn-md {
   display: flex;
   justify-content: space-between;
 }
+#course .text-point {
+  color: var(--text-point);
+}
+.course-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course-title {
+  line-height: 43px;
+}
+#course .title-line {
+  display: block;
+}
+.course-grid {
+  max-width: 840px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
+}
 .course-intro {
   display: flex;
   flex-direction: column;
@@ -346,7 +380,6 @@ header .btn-md {
   justify-content: space-between;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: var(--white);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
 }
 .course-card-info {
@@ -384,6 +417,9 @@ header .btn-md {
   }
 }
 /* 커리큘럼 섹션 */
+#curriculum {
+  padding-bottom: 0;
+}
 #curriculum::after {
   content: "";
   display: block;
@@ -410,6 +446,12 @@ header .btn-md {
   display: grid;
   align-items: center;
   box-sizing: border-box;
+}
+#curriculum .section-label {
+  margin-bottom: 16px;
+}
+.curriculum-item-desc {
+  color: var(--text-muted2);
 }
 .roadmap-items {
   grid-column: 1 / -1;
@@ -475,7 +517,7 @@ header .btn-md {
   justify-self: center;
   width: 10px;
   height: 10px;
-  background-color: var(--e-s-t_blue);
+  background-color: var(--dot-strong);
   border-radius: 50%;
 }
 .roadmap-dot {
@@ -484,7 +526,7 @@ header .btn-md {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #d9e5ff;
+  background-color: var(--dot-soft);
   box-shadow: 0 0 20px rgba(0, 117, 255, 0.4);
   border-radius: 50%;
   margin-bottom: 10px;
@@ -507,21 +549,18 @@ header .btn-md {
 .roadmap-item:hover .roadmap-dot {
   transform: scale(1.15);
   background-color: #fff;
-  box-shadow:
-    0 0 10px rgba(0, 117, 255, 0.8),
-    0 0 30px rgba(0, 117, 255, 0.4),
-    0 0 50px rgba(0, 117, 255, 0.2);
+  box-shadow: var(--roadmap-item-hover);
 }
 .roadmap-dot:hover::after {
   transform: scale(1.2);
-  background-color: #5599ff;
+  background-color: var(--roadmap-item-after-hover);
 }
 .roadmap-dot::after {
   content: "";
   display: block;
   width: 20px;
   height: 20px;
-  background-color: var(--e-s-t_blue);
+  background-color: var(--dot-strong);
   border-radius: 50%;
   transition: transform 0.3s ease;
   box-shadow: 0 0 10px 2px rgba(0, 117, 255, 0.6);
@@ -546,14 +585,17 @@ header .btn-md {
   height: 34px;
   margin-top: 6px;
   box-sizing: border-box;
-  background-color: var(--medium--blue);
-  color: var(--e-s-t_blue);
+  background-color: var(--roadmap-btn);
+  color: var(--roadmap-text-color);
   border-radius: 5px;
   transition: 0.3s;
 }
 .curriculum-btn:hover {
-  background-color: var(--e-s-t_blue);
-  color: var(--medium--blue);
+  background-color: var(--btn-strong);
+  color: var(--text-online);
+}
+.curriculum-item-week {
+  color: var(--roadmap-week);
 }
 @media (max-width: 1024px) {
   .curriculum-roadmap {
@@ -620,6 +662,10 @@ header .btn-md {
     min-width: 0;
     overflow: visible;
   }
+  .roadmap-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
   .roadmap-item:nth-child(1) {
     grid-column: 1;
     justify-self: start;
@@ -671,6 +717,9 @@ header .btn-md {
     justify-self: center;
     align-items: center;
     padding-right: 20px;
+  }
+  .roadmap-item:nth-child(even) .roadmap-item-title::after {
+    margin-top: 10px;
   }
   .roadmap-item:nth-child(even) .roadmap-item-title {
     flex-direction: column-reverse;
@@ -773,6 +822,11 @@ header .btn-md {
   background: url("../images/banner.jpg") no-repeat center / cover;
   box-sizing: border-box;
 }
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .banner .container {
   display: flex;
   justify-content: space-between;
@@ -818,10 +872,6 @@ footer {
 .footer-logo {
   line-height: 0;
 }
-.footer-logo img {
-  filter: brightness(0);
-  transition: 0.3s ease;
-}
 .footer-info address {
   display: flex;
   flex-direction: column;
@@ -863,7 +913,7 @@ footer {
   content: "";
   width: 1px;
   height: 14px;
-  background-color: var(--medium-gray2);
+  background-color: var(--liner);
   margin-right: 5px;
 }
 .policy-links a:last-child::after {
@@ -1038,6 +1088,14 @@ footer {
   color: var(--e-s-t_blue);
 }
 
+[data-theme="dark"] .main-card .icon {
+  /* padding: 7px 10px 14px 10px; */
+  padding-right: 10px;
+  padding-bottom: 7px;
+  font-size: 24px;
+  color: var(--medium--blue);
+}
+
 .main-card img {
   border-radius: 10px 10px 0 0;
 }
@@ -1067,6 +1125,31 @@ footer {
 
 .small-card img {
   border-radius: 10px 10px 0 0;
+}
+
+[data-theme="dark"] .hero-content-subtitle {
+  color: #818cf8;
+}
+[data-theme="dark"] .camp-story .intro-header h2 {
+  color: #f8fafc;
+}
+[data-theme="dark"] .camp-story .intro-header p {
+  color: #cbd5e1;
+}
+[data-theme="dark"] .camp-story .card-text {
+  background-color: var(--card-bg);
+  color: #f8fafc;
+}
+[data-theme="dark"] .camp-story .main-card-subtitle {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .camp-story-sidelist .small-card-title {
+  background-color: var(--card-bg);
+  color: var(--white);
+}
+[data-theme="dark"] .camp-story-sidelist .icon {
+  color: var(--medium--blue);
 }
 
 /* 이스트 캠프 이야기 섹션 */
