@@ -20,8 +20,8 @@
 .online-category button {
   padding: 4px 20px;
   border-radius: 50px;
-  background: var(--light--gray);
-  color: var(--medium--gray);
+  background: var(--btn-inactive-online);
+  color: var(--text-muted);
   font-size: var(--text-p);
   line-height: 27px;
   cursor: pointer;
@@ -33,8 +33,8 @@
 }
 /* 활성화 상태 */
 .online-category button.active {
-  background: var(--medium--blue);
-  color: var(--e-s-t_blue);
+  background: var(--btn-active);
+  color: var(--text-online);
 }
 /* 슬라이드네비
 .slides_nav {
@@ -344,9 +344,6 @@ header .btn-md {
   flex-direction:column;
   justify-content: space-between;
 }
-.course-title{
-  line-height:43px;
-}
 #course .title-line{
   display:block;
 }
@@ -402,6 +399,9 @@ header .btn-md {
     flex-direction:column;
     gap:50px;
   }
+  .course-title{
+    line-height:38px;
+  }
   .course-intro {
     flex-direction: row;
     align-items: flex-end;
@@ -415,6 +415,9 @@ header .btn-md {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+  }
+  .course-title{
+    line-height:31px;
   }
   .course-grid{
     grid-template-columns:1fr
@@ -587,7 +590,7 @@ header .btn-md {
 }
 .curriculum-btn:hover {
   background-color: var(--btn-strong);
-  color: var(--text-online);
+  color: var(--white);
 }
 .curriculum-item-week {
   color: var(--roadmap-week);
@@ -831,6 +834,7 @@ header .btn-md {
 }
 .banner .text-title-xl{
   text-align:left;
+  color:var(--white);
 }
 .banner h2 span{
   display:block;
@@ -932,7 +936,7 @@ footer{
     flex-direction:column-reverse;
     align-items:center;
     text-align:center;
-    gap:10px;
+    gap:20px;
   }
   .policy-links {
     display: flex;
@@ -1119,7 +1123,7 @@ footer{
     justify-content: space-between;  
     align-items: center;
     flex-direction: row;
-    background-color: var(--light--gray);
+    background-color: var(--card-bg);
     color: var(--black);
     padding: 10px 0px 10px 10px;
     border-radius: 0 0 10px 10px;
@@ -1129,31 +1133,36 @@ footer{
     border-radius: 10px 10px 0 0;
 }
 
-[data-theme="dark"] .hero-content-subtitle{
-  color: #818CF8;
-}
-[data-theme="dark"] .camp-story .intro-header h2{
-  color: #F8FAFC;
-}
-[data-theme="dark"] .camp-story .intro-header p{
-  color: #CBD5E1;
-}
-[data-theme="dark"] .camp-story .card-text{
-  background-color: var(--card-bg);
-  color: #F8FAFC;
-}
-[data-theme="dark"] .camp-story .main-card-subtitle{
-  color: #94A3B8;
+.hero .hero-content-subtitle{
+  color: var(--e-s-t_blue);
 }
 
-[data-theme="dark"] .camp-story-sidelist .small-card-title{
-  background-color: var(--card-bg);
-  color: var(--white);
-}
-[data-theme="dark"] .camp-story-sidelist .icon{
-  color: var(--medium--blue);
+.camp-story .intro-header h2{
+  color: var(--text-base);
 }
 
+.camp-story .intro-header p{
+  color: var(--text-muted2);
+}
+
+.camp-story .card-text{
+  background-color: var(--card-bg);
+  color: var(--text-base);
+}
+
+.camp-story .main-card-subtitle{
+  color: var(--text-muted);
+}
+
+.camp-story-sidelist .small-card-title{
+  background-color: var(--card-bg);
+  color: var(--text-base);
+}
+
+.camp-story .icon,
+.main-card .icon{
+  color: var(--e-s-t_blue);
+}
 
 
 /* 이스트 캠프 이야기 섹션 */
