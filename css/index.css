@@ -20,7 +20,7 @@
 .online-category button {
   padding: 4px 20px;
   border-radius: 50px;
-  background: var(--btn-inactive-online);
+  background: var(--surface-gray);
   color: var(--text-muted);
   font-size: var(--text-p);
   line-height: 27px;
@@ -33,7 +33,7 @@
 }
 /* 활성화 상태 */
 .online-category button.active {
-  background: var(--btn-active);
+  background: var(--medium--blue-muted);
   color: var(--text-online);
 }
 /* 슬라이드네비
@@ -163,8 +163,8 @@
   font-size: 14px;
   font-weight: 600;
   font-family: "Pretendard";
-  background: var(--light--blue);
-  color: var(--e-s-t_blue);
+  background: var(--surface-inverse);
+  color: var(--primary-invert);
   justify-content: center;
   align-items: center;
   border-radius: 50px;
@@ -1421,12 +1421,13 @@ footer{
 
 .camp-story .main-card{
   /* width: 948px; */
+  background-color:var(--surface-from-gray);
     padding-right: 27px;
 }
 
 
 .camp-story .card-text{
-  background-color: var(--light--gray);
+  background-color: var(--card-bg2);
   border-radius: 0 0 10px 10px;
   width: 948px;
 }
@@ -1450,14 +1451,6 @@ footer{
   color: var(--e-s-t_blue);
 }
 
-[data-theme="dark"] .main-card .icon{
-  /* padding: 7px 10px 14px 10px; */
-  padding-right: 10px;
-  padding-bottom: 7px;
-  font-size: 24px;
-  color: var(--medium--blue);
-}
-
 .main-card img {
   border-radius: 10px 10px 0 0;
 }
@@ -1478,7 +1471,9 @@ footer{
     flex-direction: column;
     gap: 24px;
 }
-
+.small-card{
+  background-color:var(--surface-from-gray);
+}
 .small-card-title{
     display: flex;
     justify-content: space-between;  
