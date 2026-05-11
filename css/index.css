@@ -956,7 +956,7 @@ footer{
 }
 
 .hero{
-    background-image: url(/images/jeju_orumi_background.jpg);
+    background-image: url(../images/jeju_orumi_background.jpg);
     height: 720px;
     background-repeat:no-repeat;
     background-size: cover;
