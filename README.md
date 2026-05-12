@@ -20,12 +20,13 @@
 
 ### 1.2 👥 팀원
 
-| 이름 | 역할 | 주요 담당 | GitHub | 연락 |
-| 조영빈 | 팀장 | 수강생 후기 섹션, Q&A 섹션 HTML/CSS | [@JoYoungBin00](https://github.com/JoYoungBin00) | dudqls_6712@naver.com |
-| 박소호 | 팀원 | 피그마 디자인, hero 섹션, 온라인 과정 섹션 HTML/CSS | [@soho1109](https://github.com/soho1109) | garam@example.com |
-| 송주윤 | 팀원 | 이스트캠프 hero, 콘텐츠 섹션 디자인 및 HTML/CSS | [@송주윤](https://github.com/Polao63) | hwangdo701@gmail.com |
-| 강채희 | 팀원 | 다크모드 시스템 반영, header, 과정 찾기 섹션, 커리큘럼 섹션 HTML/CSS | [@강채희](https://github.com/chae3110) | dldmd33333@gmail.com |
-| 최이리나 | 팀원 | 하단 CTA, footer HTML/CSS | [@최이리나](https://github.com/tsoyirina48-ai) | tsoyirina48@gmail.com |
+| 이름     | 역할 | 주요 담당                                                            | GitHub                                           | 연락                  |
+| -------- | ---- | -------------------------------------------------------------------- | ------------------------------------------------ | --------------------- |
+| 조영빈   | 팀장 | 수강생 후기 섹션, Q&A 섹션 HTML/CSS                                  | @JoYoungBin00 | dudqls_6712@naver.com |
+| 박소호   | 팀원 | 피그마 디자인, hero 섹션, 온라인 과정 섹션 HTML/CSS                  | @soho1109         | garam@example.com     |
+| 송주윤   | 팀원 | 이스트캠프 hero, 콘텐츠 섹션 디자인 및 HTML/CSS                      | @송주윤            | hwangdo701@gmail.com  |
+| 강채희   | 팀원 | 다크모드 시스템 반영, header, 과정 찾기 섹션, 커리큘럼 섹션 HTML/CSS | @강채희           | dldmd33333@gmail.com  |
+| 최이리나 | 팀원 | 하단 CTA, footer HTML/CSS                                            | @최이리나   | tsoyirina48@gmail.com 
 
 ### 1.3 🗓️ 마일스톤
 
