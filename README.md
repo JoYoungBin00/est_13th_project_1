@@ -15,18 +15,18 @@
 
 - **실무형 사이트 구현**: HTML, CSS를 실제 서비스 형태의 메인 페이지 및 인터랙션 구현
 - **디자인 역량강화**: Figma 디자인 시안을 기반으로 레이아웃, 컴포넌트, 슬라이드 UI 등을 직접 구현
-- **협업 경험**: Git/GitHub를 활용한 브랜치 전략 및 팀 협업 프로세스 경험
+- **협업 경험**: Git/GitHub를 활용한 브랜치 전략 및 팀 협업 프로세스 경험git push -u ir
 - **반응형 및 접근성 개선** : 기존 사이트 장단점 분석을 통해 편의성 향상 및 다양한 디바이스 환경에서도 최적화된 화면 제공
 
 ### 1.2 👥 팀원
 
-| 이름     | 역할 | 주요 담당                                                            | GitHub                                           | 연락                  |
-| -------- | ---- | -------------------------------------------------------------------- | ------------------------------------------------ | --------------------- |
-| 조영빈   | 팀장 | 수강생 후기 섹션, Q&A 섹션 HTML/CSS                                  | [@JoYoungBin00](https://github.com/JoYoungBin00) | dudqls_6712@naver.com |
-| 박소호   | 팀원 | 피그마 디자인, hero 섹션, 온라인 과정 섹션 HTML/CSS                  | [@soho1109 ](https://github.com/soho1109)        | park1109pp@naver.com     |
-| 송주윤   | 팀원 | 이스트캠프 hero, 콘텐츠 섹션 디자인 및 HTML/CSS                      | [@Polao63](https://github.com/Polao63)            | hwangdo701@gmail.com  |
-| 강채희   | 팀원 | 다크모드 시스템 반영, header, 과정 찾기 섹션, 커리큘럼 섹션 HTML/CSS | [@chae3110](https://github.com/chae3110)         | dldmd33333@gmail.com  |
-| 최이리나 | 팀원 | 하단 CTA, footer HTML/CSS                                            | [@tsoyirina48-ai](https://github.com/tsoyirina48-ai)   | tsoyirina48@gmail.com 
+| 이름     | 역할 | 주요 담당                                                            | GitHub                                               | 연락                  |
+| -------- | ---- | -------------------------------------------------------------------- | ---------------------------------------------------- | --------------------- |
+| 조영빈   | 팀장 | 수강생 후기 섹션, Q&A 섹션 HTML/CSS                                  | [@JoYoungBin00](https://github.com/JoYoungBin00)     | dudqls_6712@naver.com |
+| 박소호   | 팀원 | 피그마 디자인, hero 섹션, 온라인 과정 섹션 HTML/CSS                  | [@soho1109 ](https://github.com/soho1109)            | park1109pp@naver.com  |
+| 송주윤   | 팀원 | 이스트캠프 hero, 콘텐츠 섹션 디자인 및 HTML/CSS                      | [@Polao63](https://github.com/Polao63)               | hwangdo701@gmail.com  |
+| 강채희   | 팀원 | 다크모드 시스템 반영, header, 과정 찾기 섹션, 커리큘럼 섹션 HTML/CSS | [@chae3110](https://github.com/chae3110)             | dldmd33333@gmail.com  |
+| 최이리나 | 팀원 | 하단 CTA, footer HTML/CSS                                            | [@tsoyirina48-ai](https://github.com/tsoyirina48-ai) | tsoyirina48@gmail.com |
 
 ### 1.3 🗓️ 마일스톤
 
@@ -141,7 +141,7 @@ gantt
 
 ### 2.2 배포 URL
 
-- [배포링크](https://polao63.github.io/est_fe_13_1st_project/)
+- [배포링크](https://joyoungbin00.github.io/est_13th_project_1/)
 
 ### 2.3 📚 개발 컨벤션 가이드
 
