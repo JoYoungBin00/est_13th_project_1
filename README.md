@@ -131,7 +131,7 @@ gantt
 #### Frontend
 
 - **Language**: HTML / CSS
-- **Styling**: CSS Modules / Tailwind CSS
+- **Styling**: CSS Modules
 
 #### Tools
 
